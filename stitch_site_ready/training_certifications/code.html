@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html dir="ltr" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>SiteReady GCC</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-surface": "#0b1c30", "tertiary-fixed-dim": "#fabc4a", "surface-dim": "#cbdbf5", "surface-container-lowest": "#ffffff", "secondary": "#006a62", "on-tertiary-container": "#c68e1d", "on-error": "#ffffff", "on-error-container": "#93000a", "on-secondary-fixed": "#00201d", "on-primary-fixed-variant": "#2e4867", "error-container": "#ffdad6", "surface-container-high": "#dce9ff", "primary": "#001d37", "on-tertiary-fixed-variant": "#5f4100", "primary-fixed": "#d2e4ff", "primary-fixed-dim": "#aec9ed", "tertiary-container": "#422c00", "on-background": "#0b1c30", "on-secondary-container": "#007168", "secondary-fixed": "#90f4e8", "on-secondary": "#ffffff", "surface-tint": "#466080", "tertiary-fixed": "#ffdeab", "surface-container": "#e5eeff", "on-primary-fixed": "#001d37", "background": "#f8f9ff", "surface-variant": "#d3e4fe", "on-primary": "#ffffff", "on-tertiary": "#ffffff", "inverse-surface": "#213145", "surface": "#f8f9ff", "primary-container": "#16324f", "surface-container-highest": "#d3e4fe", "surface-bright": "#f8f9ff", "on-primary-container": "#809abd", "inverse-primary": "#aec9ed", "secondary-fixed-dim": "#73d7cb", "outline-variant": "#c3c6ce", "error": "#ba1a1a", "on-surface-variant": "#43474d", "surface-container-low": "#eff4ff", "tertiary": "#281900", "on-secondary-fixed-variant": "#00504a", "inverse-on-surface": "#eaf1ff", "on-tertiary-fixed": "#271900", "secondary-container": "#90f4e8", "outline": "#74777e" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "gutter-mobile": "0.75rem", "space-xl": "2rem", "space-2xl": "3rem", "space-xs": "0.25rem", "space-md": "1rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "gutter": "1.5rem", "margin-mobile": "1rem", "margin": "2rem" }, fontFamily: { "body-md": ["Inter"], "data-mono": ["Inter"], "headline-lg": ["Inter"], "headline-md": ["Inter"], "label-sm": ["Inter"], "label-md": ["Inter"], "headline-xl": ["Inter"], "body-sm": ["Inter"], "headline-sm": ["Inter"], "label-lg": ["Inter"], "headline-xl-mobile": ["Inter"], "body-lg": ["Inter"] }, fontSize: { "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }], "data-mono": ["13px", { lineHeight: "18px", fontWeight: "500" }], "headline-lg": ["24px", { lineHeight: "32px", fontWeight: "600" }], "headline-md": ["20px", { lineHeight: "28px", fontWeight: "600" }], "label-sm": ["11px", { lineHeight: "14px", fontWeight: "500" }], "label-md": ["12px", { lineHeight: "16px", fontWeight: "600" }], "headline-xl": ["32px", { lineHeight: "40px", fontWeight: "700" }], "body-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }], "headline-sm": ["18px", { lineHeight: "24px", fontWeight: "600" }], "label-lg": ["14px", { lineHeight: "20px", fontWeight: "600" }], "headline-xl-mobile": ["26px", { lineHeight: "34px", fontWeight: "700" }], "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }] } } } };</script><style>@layer base { html, body { width: 100%; margin: 0; padding: 0; } body { overscroll-behavior-y: none; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-background font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-28 px-margin-mobile flex flex-col justify-center gap-space-xs"><div class="flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="SiteReady GCC Logo" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1VX1V9SdRFFhgpboEFUm-W8JErTdQ41dlAyiY7-1B6v4Gk_xMV6YnX6rfBNzva_JqoI8tlkJ2l5Hl3Rrwl2U4tnqmLyWgqjBIUG9etkwyKSbtxJnY5sRXBbEOPRBgL-GmsMzVuMp2mvJOZQL-ba9tzViN2M4YQ3AuGdfB4AFiY9PN8kTULEtL4eX2z3l5L05jr_3zjMGVpuUa3gvzSD_R2dJz8Ejv4wF0MOxKiLA_brkA"/><div class="flex flex-col min-w-0"><span class="font-label-lg text-label-lg text-primary tracking-tight truncate">SiteReady GCC</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Training And Certifications</span></div></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="Switch language between English and Arabic" class="min-h-[44px] px-space-xs py-space-xs flex items-center justify-center bg-surface-container-high rounded-full" type="button"><div class="flex items-center bg-primary-container text-on-primary px-space-xs py-0.5 rounded-full font-label-sm text-label-sm"><span class="px-1 font-bold">EN</span><span class="text-outline-variant text-[10px]">|</span><span class="px-1 font-normal opacity-70">العربية</span></div></button><button aria-label="View alerts and notifications" class="relative w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2 right-2 w-4 h-4 bg-error text-on-error rounded-full flex items-center justify-center font-label-sm text-[10px] font-bold">3</span></button><div class="w-11 h-11 flex items-center justify-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-container/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDX0bfOnq24Yj6EFGBbBDP2qZVscBo-1qP_7GCcxbtrra-QRTQ0MavLt14lsguiAx37fSS4vFzbq8nAvZ7tCkTdwjtOVyfq_bW5llFXWrSCGui3yA2Mj1GMualwRKhUNaRnl0WyunWUEEhrLezEzmZuIXaeKJjptNVTqXL-uF0lV_H309CVnu7dvlGitbP9iNzV1eTo83zZk7dFEdIG4i5YZvCGsO-aDLFP3Qacm9Ie"/></div></div></div><div class="flex items-center justify-between gap-space-xs pt-0.5"><div class="flex items-center gap-1.5 px-space-sm py-1 bg-surface-container rounded-full min-w-0 max-w-[240px]"><span class="material-symbols-outlined text-[16px] text-secondary shrink-0">location_on</span><span class="font-label-sm text-label-sm text-on-surface font-semibold truncate">NEOM Spine Sector 4</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant shrink-0">arrow_drop_down</span></div><div class="flex items-center gap-1 text-secondary font-label-sm text-label-sm font-semibold"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span>Site Active</span></div></div></div></header><main class="flex flex-col relative w-full pt-28 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Interactive Top Action & Scan Verification Pill -->
+<div class="px-margin-mobile pt-space-xs pb-space-sm flex items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse shrink-0"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Live Gate Audit • Shift B</span>
+</div>
+<button aria-label="Scan Worker Certificate QR" class="flex items-center gap-1.5 px-3 py-1.5 bg-primary-container text-on-primary rounded-full shadow-sm active:scale-95 transition-transform" id="scanQrTrigger" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">qr_code_scanner</span>
+<span class="font-label-sm text-label-sm font-semibold tracking-wide">Quick Verify</span>
+</button>
+</div>
+<!-- Primary Metric Alert Card (GCC Compliance Status) -->
+<div class="px-margin-mobile mb-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">assignment_late</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Certification Horizon</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Gate Pass Gatekeeper Sync</p>
+</div>
+</div>
+<span class="font-data-mono text-data-mono bg-error-container text-on-error-container px-2 py-0.5 rounded-full font-bold">5 Stop-Work Risks</span>
+</div>
+<!-- Compliance Ratio Spark Strip -->
+<div class="w-full flex h-2 rounded-full overflow-hidden bg-surface-container-high my-1">
+<div class="bg-error" style="width: 1.2%"></div>
+<div class="bg-tertiary-fixed-dim" style="width: 2.0%"></div>
+<div class="bg-secondary-container" style="width: 4.6%"></div>
+<div class="bg-secondary" style="width: 92.2%"></div>
+</div>
+<!-- 4 Visual Count Pills -->
+<div class="grid grid-cols-4 gap-space-xs pt-1">
+<!-- Overdue -->
+<div class="bg-error-container/40 p-2 rounded-lg flex flex-col items-center justify-center text-center">
+<span class="font-headline-sm text-headline-sm text-error font-bold leading-none">5</span>
+<span class="font-label-sm text-[10px] text-error mt-1 leading-tight font-semibold">Overdue</span>
+</div>
+<!-- Critical <7d -->
+<div class="bg-tertiary-fixed/30 p-2 rounded-lg flex flex-col items-center justify-center text-center">
+<span class="font-headline-sm text-headline-sm text-on-tertiary-container font-bold leading-none">8</span>
+<span class="font-label-sm text-[10px] text-on-tertiary-container mt-1 leading-tight font-semibold">&lt; 7 Days</span>
+</div>
+<!-- Upcoming <30d -->
+<div class="bg-surface-container p-2 rounded-lg flex flex-col items-center justify-center text-center">
+<span class="font-headline-sm text-headline-sm text-on-primary-container font-bold leading-none">19</span>
+<span class="font-label-sm text-[10px] text-on-primary-container mt-1 leading-tight font-semibold">&lt; 30 Days</span>
+</div>
+<!-- Compliant -->
+<div class="bg-secondary-container/40 p-2 rounded-lg flex flex-col items-center justify-center text-center">
+<span class="font-headline-sm text-headline-sm text-secondary font-bold leading-none">380</span>
+<span class="font-label-sm text-[10px] text-secondary mt-1 leading-tight font-semibold">Compliant</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Fast Action Dual Bar -->
+<div class="px-margin-mobile mb-space-md grid grid-cols-2 gap-space-sm">
+<button aria-label="Export Expiry PDF for Client Audit" class="flex items-center justify-center gap-1.5 py-2.5 px-3 bg-primary text-on-primary rounded-xl shadow-sm active:opacity-90 transition-opacity" type="button">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+<span class="font-label-md text-label-md truncate">Export Client PDF</span>
+</button>
+<button aria-label="Send Bulk WhatsApp or SMS Alert" class="flex items-center justify-center gap-1.5 py-2.5 px-3 bg-surface-container-highest text-primary-container rounded-xl shadow-sm active:bg-surface-variant transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">notifications_active</span>
+<span class="font-label-md text-label-md truncate">Bulk SMS / WhatsApp</span>
+</button>
+</div>
+<!-- Expiry Horizon Filter Segmented Tabs (Horizontal Scroll) -->
+<div class="mb-space-md">
+<div aria-label="Horizon Filters" class="flex items-center gap-2 overflow-x-auto px-margin-mobile pb-1 no-scrollbar" role="tablist">
+<button class="px-3.5 py-1.5 rounded-full font-label-md text-label-md shrink-0 bg-primary-container text-on-primary shadow-sm filter-pill" data-filter="all" type="button">
+        All Time
+      </button>
+<button class="px-3.5 py-1.5 rounded-full font-label-md text-label-md shrink-0 bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-colors filter-pill" data-filter="overdue" type="button">
+        Overdue <span class="ml-1 px-1.5 py-0.2 bg-error text-on-error rounded-full text-[10px]">5</span>
+</button>
+<button class="px-3.5 py-1.5 rounded-full font-label-md text-label-md shrink-0 bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-colors filter-pill" data-filter="7days" type="button">
+        Next 7 Days <span class="ml-1 px-1.5 py-0.2 bg-tertiary-fixed-dim text-tertiary-container rounded-full text-[10px]">8</span>
+</button>
+<button class="px-3.5 py-1.5 rounded-full font-label-md text-label-md shrink-0 bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-colors filter-pill" data-filter="30days" type="button">
+        Next 30 Days (19)
+      </button>
+<button class="px-3.5 py-1.5 rounded-full font-label-md text-label-md shrink-0 bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-colors filter-pill" data-filter="90days" type="button">
+        Next 90 Days (42)
+      </button>
+</div>
+</div>
+<!-- Main Scrollable Certificates Stack -->
+<div class="px-margin-mobile flex flex-col gap-space-lg">
+<!-- GROUP 1: CRITICAL / OVERDUE -->
+<section aria-labelledby="critical-group-header" class="flex flex-col gap-space-sm">
+<div class="flex items-center gap-2 px-1" id="critical-group-header">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<h3 class="font-label-lg text-label-lg text-error font-bold uppercase tracking-tight">
+          ACTION REQUIRED: Overdue Certificates
+        </h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant px-1 -mt-1">
+        Immediate Stop-Work risk under GCC HSE Regulations. Gate pass flagged.
+      </p>
+<!-- Card 1: Tariq Al-Otaibi -->
+<article class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 bottom-0 w-1.5 bg-error"></div>
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<img class="w-12 h-12 rounded-xl object-cover shrink-0 bg-surface-container" data-alt="Close-up portrait of a male Saudi Arabian construction rigging supervisor wearing a white industrial safety hard hat with high-visibility reflective striping on an active desert mega-project site during morning sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKBOPXiry1QfS5ggSP5Fe1O81mfhC_shKuLNSOJm2BFPghwWuD_Zs1w7UAwcUBoK1D5_rI1O9UESGc3Ame9silqs_ZEbB0Ice3el5G3BFOyE2Mq484n1YJ_9pU3pp2YiYWvXPcbfA1CA1esyafve2FwnIHYwOxzZYcqU3y8e0r5L5R2wGhx3tF-ubkw0Y2RO-05Zbfl6Mxi05kamQKBYr_OozldWzaAXIkJ396zJ_n"/>
+<div class="flex flex-col min-w-0">
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate">Aramco Rigging Supervisor Level 2</h4>
+<p class="font-body-sm text-body-sm text-on-surface font-semibold truncate">Tariq Al-Otaibi</p>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-data-mono text-label-sm">
+<span>Cert: SA-RIG-88219</span>
+<span>•</span>
+<span class="truncate">Aramco Safety Dept.</span>
+</div>
+</div>
+</div>
+<span class="font-label-sm text-label-sm font-bold bg-error-container text-on-error-container px-2.5 py-1 rounded-full shrink-0">
+            Expired 3d ago
+          </span>
+</div>
+<!-- Warning Pill Box -->
+<div class="bg-error-container/30 rounded-lg p-2.5 flex items-center gap-2 text-on-error-container">
+<span class="material-symbols-outlined text-[18px] text-error shrink-0">block</span>
+<span class="font-label-sm text-label-sm font-semibold truncate">Gate Lockout: Unauthorized for lift operations</span>
+</div>
+<!-- Action Row -->
+<div class="flex items-center justify-end gap-space-xs pt-1">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md active:bg-surface-container-high transition-colors" type="button">
+            Reassign Work
+          </button>
+<button class="px-3.5 py-1.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md flex items-center gap-1 active:opacity-90 shadow-sm transition-opacity" type="button">
+<span class="material-symbols-outlined text-[16px]">autorenew</span>
+<span>Renew Certificate</span>
+</button>
+</div>
+</article>
+<!-- Card 2: Anand Varma -->
+<article class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 bottom-0 w-1.5 bg-error"></div>
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<img class="w-12 h-12 rounded-xl object-cover shrink-0 bg-surface-container" data-alt="Headshot of a skilled Indian industrial safety technician wearing safety goggles and yellow hard hat with a refinery backdrop in Jubail, captured in clear ambient outdoor lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOLTxqNkKb2NmfBJ6uWAmVPpaUfHayK1wPzRFUNhf9Ry3o_LPpLIjiPeYu8csJAbIlXfc2PxS3CQK_gZX-KA2Sp7QPOToPR5IMNXG_BKTHpnqnyfaGTaXtayFshgBNscbkhetSmkAqc9CQb_LW5aCYTGRfUG3mQk7zRxxdJu7D1TO0wHmNI52jXCjWOccUJlNJLzqH552mEG2ruewPhDJolr8gz2movFTriyUTLr0A"/>
+<div class="flex flex-col min-w-0">
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate">Confined Space Gas Tester (CS-04)</h4>
+<p class="font-body-sm text-body-sm text-on-surface font-semibold truncate">Anand Varma</p>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-data-mono text-label-sm">
+<span>Cert: TUV-CS-4190</span>
+<span>•</span>
+<span class="truncate">TÜV Middle East</span>
+</div>
+</div>
+</div>
+<span class="font-label-sm text-label-sm font-bold bg-error-container text-on-error-container px-2.5 py-1 rounded-full shrink-0">
+            Expired Yesterday
+          </span>
+</div>
+<div class="bg-error-container/30 rounded-lg p-2.5 flex items-center gap-2 text-on-error-container">
+<span class="material-symbols-outlined text-[18px] text-error shrink-0">warning</span>
+<span class="font-label-sm text-label-sm font-semibold truncate">CS Entry Permit Revoked • Hot Work Barred</span>
+</div>
+<div class="flex items-center justify-end gap-space-xs pt-1">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md active:bg-surface-container-high transition-colors" type="button">
+            Substitute Worker
+          </button>
+<button class="px-3.5 py-1.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md flex items-center gap-1 active:opacity-90 shadow-sm transition-opacity" type="button">
+<span class="material-symbols-outlined text-[16px]">upload_file</span>
+<span>Upload New Card</span>
+</button>
+</div>
+</article>
+</section>
+<!-- GROUP 2: EXPIRING WITHIN 7 DAYS -->
+<section aria-labelledby="upcoming-group-header" class="flex flex-col gap-space-sm">
+<div class="flex items-center gap-2 px-1" id="upcoming-group-header">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim"></span>
+<h3 class="font-label-lg text-label-lg text-on-surface font-bold uppercase tracking-tight">
+          Expiring Within 7 Days
+        </h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-normal">(Renewal In Progress)</span>
+</div>
+<!-- Card 3: Zayd Al-Harbi -->
+<article class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 bottom-0 w-1.5 bg-tertiary-fixed-dim"></div>
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<img class="w-12 h-12 rounded-xl object-cover shrink-0 bg-surface-container" data-alt="Portrait of an Arab HSE site officer in reflective orange high-visibility vest and dark blue helmet smiling professionally with industrial construction cranes in Riyadh in the background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXGTjRcmYicmtNcnx4fl7kHa6GRNy1RBUtigQjEVoJsAiWx2D87kmvzBIXVddaMPQKC7peh3U69JtEA2c3UrKY4v71iBxj_7SLp9VIh5Fc4BSujx5MxyUPGVjEC3dyO-j-NV4cI0zOomQu0Z4OFT2WGJdrR20irjyRDDaPXMo6ahxZhlO8Uf6lKiN6EeeW0ujHHXE9QFyHFJWDMkp8V_fX30dGb5JUiZOMPKAL5zat"/>
+<div class="flex flex-col min-w-0">
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate">NEBOSH International General Certificate</h4>
+<p class="font-body-sm text-body-sm text-on-surface font-semibold truncate">Zayd Al-Harbi</p>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-data-mono text-label-sm">
+<span>Cert: NEB-GCC-9921</span>
+<span>•</span>
+<span class="truncate">NEBOSH Board UK</span>
+</div>
+</div>
+</div>
+<span class="font-label-sm text-label-sm font-bold bg-tertiary-fixed/40 text-on-tertiary-container px-2.5 py-1 rounded-full shrink-0">
+            4 Days Left
+          </span>
+</div>
+<!-- Pending Workflow Status Card -->
+<div class="bg-surface-container rounded-lg p-2.5 flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-[18px] text-secondary shrink-0">pending_actions</span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium truncate">Renewal Submitted - Verification Pending</span>
+</div>
+<span class="font-label-sm text-[10px] text-on-surface-variant font-data-mono">T-48h SLA</span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Exp: 11 May 2025</span>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high text-primary font-label-md text-label-md flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>View Submittal</span>
+</button>
+</div>
+</article>
+<!-- Card 4: Vikram Singh -->
+<article class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 bottom-0 w-1.5 bg-tertiary-fixed-dim"></div>
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<img class="w-12 h-12 rounded-xl object-cover shrink-0 bg-surface-container" data-alt="Portrait of an experienced South Asian scaffold erector wearing safety glasses and white helmet on a modern industrial engineering project site in Doha." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBc-1Z2RslOYgKaZsi5Piy0yfa2D_HnZWwsd21MLvDkRC9QUgtiaMcFQt1SZg9WQvZ1_gybiRboTkBP3MEJMdM9WXCll8WuniUGxB36TD8xyazRY-_SXRQ_-Ard7GE5lF97wBkN0_ChgTJh7d6A_f5--CNiQZnztnZYdCIhwmFxL3geJq5Mju-6y75z3uR1OpkHY-GBvw72sz9ZpJh_720lAGEhttDIp72VI9q4Pdp_"/>
+<div class="flex flex-col min-w-0">
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate">Scaffold Erector Competency Card</h4>
+<p class="font-body-sm text-body-sm text-on-surface font-semibold truncate">Vikram Singh</p>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-data-mono text-label-sm">
+<span>Cert: CISRS-55201</span>
+<span>•</span>
+<span class="truncate">CISRS International</span>
+</div>
+</div>
+</div>
+<span class="font-label-sm text-label-sm font-bold bg-tertiary-fixed/40 text-on-tertiary-container px-2.5 py-1 rounded-full shrink-0">
+            6 Days Left
+          </span>
+</div>
+<div class="bg-surface-container rounded-lg p-2.5 flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0">event_available</span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium truncate">Training scheduled for tomorrow (09:00)</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Confirmed</span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Exp: 13 May 2025</span>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high text-primary font-label-md text-label-md flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">send</span>
+<span>Send Reminder</span>
+</button>
+</div>
+</article>
+</section>
+<!-- GROUP 3: RECENTLY RENEWED -->
+<section aria-labelledby="renewed-group-header" class="flex flex-col gap-space-sm">
+<div class="flex items-center gap-2 px-1" id="renewed-group-header">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<h3 class="font-label-lg text-label-lg text-on-surface font-bold uppercase tracking-tight">
+          Recently Renewed
+        </h3>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Active &amp; Validated</span>
+</div>
+<!-- Card 5: Khalid Mansoor -->
+<article class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 bottom-0 w-1.5 bg-secondary"></div>
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<img class="w-12 h-12 rounded-xl object-cover shrink-0 bg-surface-container" data-alt="Portrait of a young Middle Eastern paramedic and safety worker in blue company medical uniform inside an air-conditioned industrial clinic container at a GCC energy facility." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8w8cMjz06HNr7D7Aumft3YJx1buGChDHraqto2HI-tJYTobMmS13oDrTx10Y4hGj2PZlbZw3vhw9TwPSav61CFL4yQbGUhgDZOHG8FPN2h6PH7yQojmJbyLFbhG1NOuorno0U8K5UnG1Fw6-Vs6sRU9JVT1L1ayTyLyufT-BYz0PhQWSlT-Dc0g0L-3hthafNCIBKmHDD3v4mp-h46Nope5s5U_vxSg-B1y5ZfJ0k"/>
+<div class="flex flex-col min-w-0">
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate">First Aid &amp; CPR at Work</h4>
+<p class="font-body-sm text-body-sm text-on-surface font-semibold truncate">Khalid Mansoor</p>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-data-mono text-label-sm">
+<span>Cert: SA-MED-1049</span>
+<span>•</span>
+<span class="truncate">Red Crescent Certified</span>
+</div>
+</div>
+</div>
+<span class="font-label-sm text-label-sm font-bold bg-secondary-container/40 text-secondary px-2.5 py-1 rounded-full shrink-0">
+            Valid: Nov 2026
+          </span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-1">
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span class="font-semibold">Aramco ID Synced</span>
+</div>
+<span class="font-data-mono">Verified 2 days ago</span>
+</div>
+</article>
+</section>
+</div>
+<!-- Interactive Floating Bar: Live Gate Verification Mode -->
+<div class="fixed bottom-20 left-4 right-4 z-40">
+<div class="bg-primary text-on-primary rounded-xl p-3 shadow-xl flex items-center justify-between gap-3">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px] text-secondary-fixed">nfc</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-primary truncate">NFC &amp; QR Terminal Active</span>
+<span class="font-body-sm text-body-sm text-primary-fixed-dim truncate">Hold badge near mobile back to audit</span>
+</div>
+</div>
+<button class="px-3 py-1.5 bg-secondary text-on-secondary rounded-lg font-label-md text-label-md shrink-0 shadow-sm active:scale-95 transition-transform" type="button">
+        Scan Gate
+      </button>
+</div>
+</div>
+<!-- Micro Interaction Script for Filter Selection & QR Alert Feedback -->
+<script>
+    document.querySelectorAll('.filter-pill').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-pill').forEach(p => {
+          p.classList.remove('bg-primary-container', 'text-on-primary', 'shadow-sm');
+          p.classList.add('bg-surface-container', 'text-on-surface-variant');
+        });
+        btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+        btn.classList.add('bg-primary-container', 'text-on-primary', 'shadow-sm');
+      });
+    });
+
+    const qrBtn = document.getElementById('scanQrTrigger');
+    if (qrBtn) {
+      qrBtn.addEventListener('click', () => {
+        qrBtn.classList.add('scale-95');
+        setTimeout(() => qrBtn.classList.remove('scale-95'), 150);
+      });
+    }
+  </script>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_10px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-semibold"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] text-on-surface-variant hover:text-primary transition-colors" data-path="compliance-dashboard" href="#"><span class="material-symbols-outlined text-[22px]">dashboard</span><span class="font-label-sm text-label-sm mt-0.5">Dashboard</span></a><a class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] text-on-surface-variant hover:text-primary transition-colors" data-path="workforce-roster" href="#"><span class="material-symbols-outlined text-[22px]">badge</span><span class="font-label-sm text-label-sm mt-0.5">Workers</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] transition-colors text-primary font-semibold" data-path="training-and-certifications" href="#"><span class="material-symbols-outlined text-[22px]">verified</span><span class="font-label-sm text-label-sm mt-0.5">Certs</span></a><a class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] text-on-surface-variant hover:text-primary transition-colors" data-path="safety-inspections" href="#"><span class="material-symbols-outlined text-[22px]">fact_check</span><span class="font-label-sm text-label-sm mt-0.5">Audits</span></a><a class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] text-on-surface-variant hover:text-primary transition-colors" data-path="compliance-reports" href="#"><span class="material-symbols-outlined text-[22px]">summarize</span><span class="font-label-sm text-label-sm mt-0.5">Reports</span></a></div></nav></body></html>

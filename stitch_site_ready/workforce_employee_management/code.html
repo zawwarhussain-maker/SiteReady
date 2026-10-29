@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"inverse-primary":"#aec9ed","outline-variant":"#c3c6ce","surface-bright":"#f8f9ff","tertiary-container":"#422c00","primary-fixed":"#d2e4ff","on-surface-variant":"#43474d","on-tertiary-fixed-variant":"#5f4100","surface-tint":"#466080","surface-container-highest":"#d3e4fe","on-surface":"#0b1c30","secondary-container":"#90f4e8","surface":"#f8f9ff","background":"#f8f9ff","primary-container":"#16324f","secondary-fixed":"#90f4e8","on-primary-container":"#809abd","secondary-fixed-dim":"#73d7cb","on-background":"#0b1c30","tertiary-fixed-dim":"#fabc4a","surface-container":"#e5eeff","tertiary-fixed":"#ffdeab","on-secondary-container":"#007168","error":"#ba1a1a","surface-container-high":"#dce9ff","on-primary":"#ffffff","on-tertiary-container":"#c68e1d","on-tertiary":"#ffffff","on-secondary-fixed-variant":"#00504a","on-primary-fixed-variant":"#2e4867","error-container":"#ffdad6","on-secondary":"#ffffff","outline":"#74777e","secondary":"#006a62","primary":"#001d37","primary-fixed-dim":"#aec9ed","surface-container-low":"#eff4ff","on-error-container":"#93000a","surface-container-lowest":"#ffffff","on-secondary-fixed":"#00201d","surface-dim":"#cbdbf5","on-error":"#ffffff","tertiary":"#281900","surface-variant":"#d3e4fe","inverse-surface":"#213145","on-tertiary-fixed":"#271900","on-primary-fixed":"#001d37","inverse-on-surface":"#eaf1ff"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin":"2rem","gutter-mobile":"0.75rem","space-md":"1rem","space-xl":"2rem","margin-mobile":"1rem","space-lg":"1.5rem","space-sm":"0.5rem","space-xs":"0.25rem","space-2xl":"3rem","gutter":"1.5rem"},"fontFamily":{"headline-xl-mobile":["Inter"],"headline-lg":["Inter"],"data-mono":["Inter"],"label-sm":["Inter"],"label-md":["Inter"],"headline-md":["Inter"],"headline-xl":["Inter"],"body-sm":["Inter"],"body-md":["Inter"],"headline-sm":["Inter"],"label-lg":["Inter"],"body-lg":["Inter"]},"fontSize":{"headline-xl-mobile":["26px",{"lineHeight":"34px","fontWeight":"700"}],"headline-lg":["24px",{"lineHeight":"32px","fontWeight":"600"}],"data-mono":["13px",{"lineHeight":"18px","fontWeight":"500"}],"label-sm":["11px",{"lineHeight":"14px","fontWeight":"500"}],"label-md":["12px",{"lineHeight":"16px","fontWeight":"600"}],"headline-md":["20px",{"lineHeight":"28px","fontWeight":"600"}],"headline-xl":["32px",{"lineHeight":"40px","fontWeight":"700"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"24px","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen"><aside class="fixed left-0 top-0 h-screen w-64 bg-primary text-on-primary z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.08)]"><div class="flex flex-col flex-1 overflow-y-auto"><div class="h-16 px-space-lg flex items-center justify-between bg-primary-container/40"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded bg-secondary flex items-center justify-center"><span class="material-symbols-outlined text-on-secondary text-[20px]">verified_user</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-on-primary leading-none">SiteReady</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed-dim">GCC Compliance</span></div></div><span class="material-symbols-outlined text-on-primary-container text-[18px]">shield</span></div><div class="px-space-md py-space-sm"><div class="px-space-sm py-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-primary-container">Operational Modules</div></div><nav class="flex flex-col gap-space-xs px-space-sm" data-active-classes="bg-secondary text-on-secondary font-label-lg rounded-xl shadow-sm"><a class="flex items-center justify-between px-space-md py-2.5 rounded-xl font-body-md text-body-md text-on-primary-container hover:bg-primary-container hover:text-on-primary transition-colors group" data-path="dashboard" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px] transition-transform group-hover:scale-105">space_dashboard</span><span>Dashboard</span></div><span class="px-1.5 py-0.5 rounded text-label-sm font-label-sm bg-error-container text-on-error-container">3</span></a><a aria-current="page" class="flex items-center justify-between px-space-md py-2.5 transition-colors group bg-secondary text-on-secondary font-label-lg rounded-xl shadow-sm" data-path="employees" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px] transition-transform group-hover:scale-105">badge</span><span>Employees</span></div><span class="font-data-mono text-data-mono text-on-primary-container">428</span></a><a class="flex items-center justify-between px-space-md py-2.5 rounded-xl font-body-md text-body-md text-on-primary-container hover:bg-primary-container hover:text-on-primary transition-colors group" data-path="certificates-&amp;-training" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px] transition-transform group-hover:scale-105">workspace_premium</span><span>Certificates &amp; Training</span></div><span class="px-1.5 py-0.5 rounded text-label-sm font-label-sm bg-tertiary-fixed text-on-tertiary-fixed">12</span></a><a class="flex items-center justify-between px-space-md py-2.5 rounded-xl font-body-md text-body-md text-on-primary-container hover:bg-primary-container hover:text-on-primary transition-colors group" data-path="inspections" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px] transition-transform group-hover:scale-105">fact_check</span><span>Inspections</span></div></a><a class="flex items-center justify-between px-space-md py-2.5 rounded-xl font-body-md text-body-md text-on-primary-container hover:bg-primary-container hover:text-on-primary transition-colors group" data-path="reports" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px] transition-transform group-hover:scale-105">analytics</span><span>Reports</span></div></a><div class="my-space-xs mx-space-sm h-px bg-primary-container/60"></div><div class="px-space-sm py-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-primary-container">Administration</div><a class="flex items-center justify-between px-space-md py-2.5 rounded-xl font-body-md text-body-md text-on-primary-container hover:bg-primary-container hover:text-on-primary transition-colors group" data-path="team-&amp;-permissions" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px] transition-transform group-hover:scale-105">admin_panel_settings</span><span>Team &amp; Permissions</span></div></a><a class="flex items-center justify-between px-space-md py-2.5 rounded-xl font-body-md text-body-md text-on-primary-container hover:bg-primary-container hover:text-on-primary transition-colors group" data-path="settings-&amp;-subscription" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px] transition-transform group-hover:scale-105">settings_suggest</span><span>Settings &amp; Subscription</span></div></a></nav></div><div class="p-space-md bg-primary-container/30 m-space-sm rounded-xl flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-secondary-fixed-dim uppercase tracking-wider">KSA / UAE Sites</span><span class="w-2 h-2 rounded-full bg-secondary-fixed"></span></div><span class="font-label-md text-label-md text-on-primary">Gate Pass Sync Active</span><span class="font-body-sm text-body-sm text-on-primary-container">Muqeem &amp; Qiwa Live Gateway</span></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container-low px-space-md py-space-xs rounded-xl"><span class="material-symbols-outlined text-[18px] text-secondary">business</span><div class="flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Al-Fanar Contracting</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none">NEOM Spine &amp; Riyadh Metro Package 4</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant ml-space-xs">unfold_more</span></div><div class="hidden lg:flex items-center gap-space-xs bg-surface-container-low px-space-md py-space-xs rounded-xl w-72"><span class="material-symbols-outlined text-[18px] text-on-surface-variant">search</span><span class="font-body-sm text-body-sm text-outline-variant flex-1">Search workers, iqamas...</span><span class="font-data-mono text-label-sm bg-surface-container-lowest px-1.5 py-0.5 rounded text-on-surface-variant shadow-sm">⌘K</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center bg-surface-container-low p-0.5 rounded-lg"><button class="px-2 py-1 rounded font-label-sm text-label-sm bg-primary text-on-primary font-semibold">EN</button><button class="px-2 py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface">العربية</button></div><div class="relative flex items-center justify-center w-10 h-10 rounded-xl bg-surface-container-low hover:bg-surface-container hover:text-on-surface transition-colors cursor-pointer"><span class="material-symbols-outlined text-on-surface-variant text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></div><div class="h-8 w-px bg-surface-container"></div><div class="flex items-center gap-space-sm pl-space-xs cursor-pointer"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden xl:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight">Eng. Tariq Al-Otaibi</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none">HSE Director</span></div><span class="material-symbols-outlined text-[18px] text-on-surface-variant">expand_more</span></div></div></header><main class="w-full pt-16 px-space-lg pb-space-2xl bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Subtle decorative ambient glow contained within context -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-16 right-12 w-96 h-96 rounded-full bg-secondary-container/20 blur-3xl pointer-events-none"></div>
+<div class="absolute top-48 left-1/3 w-80 h-80 rounded-full bg-surface-container-high/40 blur-3xl pointer-events-none"></div>
+<!-- Top Action Bar & Header Breadcrumb Area -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md py-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="hover:text-primary cursor-pointer transition-colors">Workforce Operations</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-semibold">Employee Compliance Directory</span>
+<span class="ml-space-xs px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-data-mono text-label-sm font-semibold">KSA Qiwa-Sync: Live</span>
+</div>
+<div class="flex items-baseline gap-space-md">
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Employee Directory</h1>
+<span class="font-data-mono text-data-mono text-on-surface-variant bg-surface-container-low px-2 py-1 rounded-lg">152 Active Records</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+          Manage 152 site personnel, trade certifications, and biometric gate clearances across KSA &amp; UAE mega-projects.
+        </p>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="inline-flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-surface-container-lowest text-on-surface hover:bg-surface-container-low shadow-sm transition-all text-label-lg font-label-lg active:scale-95" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">upload_file</span>
+<span>Import CSV</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-surface-container-lowest text-on-surface hover:bg-surface-container-low shadow-sm transition-all text-label-lg font-label-lg active:scale-95" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">ios_share</span>
+<span>Export Roster (XLS/PDF)</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-lg py-2.5 rounded-xl bg-primary text-on-primary hover:bg-primary-container shadow-md transition-all text-label-lg font-label-lg active:scale-95 group" id="btn-add-employee" type="button">
+<span class="material-symbols-outlined text-[20px] transition-transform group-hover:rotate-90">add</span>
+<span>+ Add Employee</span>
+</button>
+</div>
+</div>
+<!-- Quick Status Triage / Metric Banners -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-md my-space-md">
+<!-- Total Filter Pill -->
+<button class="stat-pill text-left p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex flex-col justify-between group" onclick="setFilter('all')" type="button">
+<div class="flex items-center justify-between w-full">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Total Workforce</span>
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+</div>
+<div class="flex items-baseline justify-between mt-space-sm">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">152</span>
+<span class="font-data-mono text-label-sm text-secondary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[16px]">verified</span> 100% Audited
+          </span>
+</div>
+</button>
+<!-- Compliant Filter Pill -->
+<button class="stat-pill text-left p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex flex-col justify-between group" onclick="setFilter('compliant')" type="button">
+<div class="flex items-center justify-between w-full">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Gate Ready (Compliant)</span>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+</div>
+<div class="flex items-baseline justify-between mt-space-sm">
+<span class="font-headline-lg text-headline-lg text-secondary font-bold">139</span>
+<span class="font-data-mono text-label-sm text-secondary-container bg-secondary/10 px-2 py-0.5 rounded text-secondary font-semibold">91.4% Rate</span>
+</div>
+</button>
+<!-- Expiring Soon Pill -->
+<button class="stat-pill text-left p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex flex-col justify-between group" onclick="setFilter('expiring')" type="button">
+<div class="flex items-center justify-between w-full">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-tertiary-container">Expiring &lt;30d</span>
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim"></span>
+</div>
+<div class="flex items-baseline justify-between mt-space-sm">
+<span class="font-headline-lg text-headline-lg text-on-tertiary-container font-bold">10</span>
+<span class="font-data-mono text-label-sm text-tertiary bg-tertiary-fixed/30 px-2 py-0.5 rounded font-semibold">Grace Period</span>
+</div>
+</button>
+<!-- Suspended / Overdue Pill -->
+<button class="stat-pill text-left p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex flex-col justify-between group" onclick="setFilter('overdue')" type="button">
+<div class="flex items-center justify-between w-full">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-error">Overdue / Suspended</span>
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+</div>
+<div class="flex items-baseline justify-between mt-space-sm">
+<span class="font-headline-lg text-headline-lg text-error font-bold">3</span>
+<span class="font-data-mono text-label-sm bg-error-container text-on-error-container px-2 py-0.5 rounded font-semibold">Turnstile Barred</span>
+</div>
+</button>
+</div>
+<!-- Search & Multi-Select Filter Toolbar -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm mb-space-md flex flex-col gap-space-md">
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-12 gap-space-sm items-center">
+<!-- Search Input -->
+<div class="xl:col-span-4 relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[20px]">search</span>
+<input class="w-full pl-10 pr-space-md py-2 bg-surface-container-low rounded-xl font-body-md text-body-md text-on-surface placeholder:text-outline focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all" id="worker-search-input" placeholder="Search by full name, Iqama ID, passport, or trade..." type="text"/>
+</div>
+<!-- Assigned Site Dropdown -->
+<div class="xl:col-span-2 relative">
+<select class="w-full appearance-none pl-3 pr-8 py-2 bg-surface-container-low rounded-xl font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all cursor-pointer" id="filter-site">
+<option value="all">All Sites</option>
+<option value="neom">NEOM Sector 4 (Spine)</option>
+<option value="riyadh">Riyadh Metro Hub Pkg 4</option>
+<option value="redsea">Red Sea Project (Phase 2)</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 text-[18px] text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+<!-- Subcontractor Filter -->
+<div class="xl:col-span-2 relative">
+<select class="w-full appearance-none pl-3 pr-8 py-2 bg-surface-container-low rounded-xl font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all cursor-pointer" id="filter-subcontractor">
+<option value="all">All Subcontractors</option>
+<option value="alfanar">Al-Fanar Civils</option>
+<option value="gulfmep">Gulf MEP Contracting</option>
+<option value="modernscaff">Modern Scaffolding Co.</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 text-[18px] text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+<!-- Trade / Role Filter -->
+<div class="xl:col-span-2 relative">
+<select class="w-full appearance-none pl-3 pr-8 py-2 bg-surface-container-low rounded-xl font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all cursor-pointer" id="filter-role">
+<option value="all">All Trades / Roles</option>
+<option value="crane">Crane Operator (Mobile)</option>
+<option value="scaffolder">Master Scaffolder</option>
+<option value="hse">HSE Officer</option>
+<option value="welder">6G Certified Welder</option>
+<option value="electrician">HV Electrical Specialist</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 text-[18px] text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+<!-- Status Filter -->
+<div class="xl:col-span-2 relative">
+<select class="w-full appearance-none pl-3 pr-8 py-2 bg-surface-container-low rounded-xl font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all cursor-pointer" id="filter-status">
+<option value="all">All Compliance States</option>
+<option value="compliant">Compliant</option>
+<option value="expiring">Expiring &lt;30d</option>
+<option value="overdue">Overdue / Suspended</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 text-[18px] text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Secondary control strip: Active tags & Table Utilities -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Active Filter Tags:</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-container text-on-surface text-label-sm font-label-sm">
+<span>Site: All Packages</span>
+<span class="material-symbols-outlined text-[14px] cursor-pointer hover:text-error">close</span>
+</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-container text-on-surface text-label-sm font-label-sm">
+<span>Visa Status: Iqama Valid</span>
+<span class="material-symbols-outlined text-[14px] cursor-pointer hover:text-error">close</span>
+</span>
+<button class="text-secondary font-label-sm text-label-sm underline hover:text-on-secondary-container ml-space-xs" type="button">Clear all filters</button>
+</div>
+<div class="flex items-center gap-space-sm">
+<!-- Live Gate Scan Indicator -->
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span>Gate Turnstiles: Syncing (0.4s)</span>
+</div>
+<!-- Empty state toggle preview trigger -->
+<button class="px-2.5 py-1 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm transition-colors flex items-center gap-1" id="toggle-empty-state-btn" type="button">
+<span class="material-symbols-outlined text-[14px]">toggle_on</span>
+<span>Simulate Empty State</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Data Table Container -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden transition-all" id="roster-table-container">
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-md text-label-md uppercase tracking-wider">
+<th class="py-3.5 px-space-md text-left w-12" scope="col">
+<input class="w-4 h-4 rounded bg-surface-container-lowest text-primary focus:ring-0 cursor-pointer" id="select-all-checkbox" type="checkbox"/>
+</th>
+<th class="py-3.5 px-space-md" scope="col">Employee / Iqama ID</th>
+<th class="py-3.5 px-space-md" scope="col">Trade &amp; Job Title</th>
+<th class="py-3.5 px-space-md" scope="col">Site &amp; Subcontractor</th>
+<th class="py-3.5 px-space-md" scope="col">Compliance Status</th>
+<th class="py-3.5 px-space-md" scope="col">HSE Credentials</th>
+<th class="py-3.5 px-space-md" scope="col">Site Access</th>
+<th class="py-3.5 px-space-md text-right" scope="col">Actions</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md divide-y-0" id="worker-table-body">
+<!-- ROW 1: Mohammad Salem (Compliant) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-3 px-space-md">
+<input class="worker-chk w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="relative w-10 h-10 rounded-xl overflow-hidden shadow-sm shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Close-up professional headshot of Mohammad Salem, a Middle Eastern civil works engineer wearing a white high-visibility hard hat, safety glasses, and a high-vis orange vest with desert construction project background in warm golden sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1jgOKXSzwL7dy88HpLggI4ltxk5uh5u-sEROnYqaH9XAFNCc2aofQGHuyGTtoFJKd-ZWLfQDnIi2wgPDVm4YZjvVRqrfPu7a9EqegFzS2YrCV67bt5_T0qCm0WHk0PcsLKVbFEvXleUu8viG4nIye7gBa_gq_84Dh1_bZzXrr6ScbkZ_vBZdZwd7ww__JeNk71p6S-phvDq5fLoOKIVuk5hRWHZjRF1SnzuStyaMQ"/>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface group-hover:text-primary transition-colors">Mohammad Salem</span>
+<span class="px-1.5 py-0.2 rounded font-label-sm text-[10px] uppercase font-bold bg-surface-container text-on-surface-variant">SAU</span>
+</div>
+<div class="flex items-center gap-1 font-data-mono text-label-sm text-on-surface-variant">
+<span class="text-primary font-semibold">SR-8921</span>
+<span>•</span>
+<span>Iqama: 2489103984</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Senior HSE Lead</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Occupational Health &amp; Risk</span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">NEOM Sector 4 (Spine)</span>
+<span class="font-body-sm text-body-sm text-secondary">Al-Fanar Civils (Tier 1)</span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container/50 text-on-secondary-container w-fit">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+<span class="font-label-sm text-label-sm font-bold">Compliant (4/4)</span>
+</div>
+<span class="block font-data-mono text-[11px] text-outline mt-0.5">Valid thru Dec 2026</span>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-1 flex-wrap max-w-xs">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container text-primary font-semibold">NEBOSH Dip</span>
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-primary/10 text-primary font-semibold">Aramco OSP#4</span>
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container text-on-surface-variant">First Aid L3</span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-low font-label-sm text-label-sm text-secondary font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Active On-Site
+                </span>
+</td>
+<td class="py-3 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-secondary transition-colors" title="Log Gate Clearance" type="button">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" title="View Compliance Profile" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 2: Bilal Ahmed (Expiring Soon) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-3 px-space-md">
+<input class="worker-chk w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="relative w-10 h-10 rounded-xl overflow-hidden shadow-sm shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Portrait photo of Bilal Ahmed, a professional South Asian heavy machine operator wearing a yellow safety helmet, dark navy collared industrial uniform, and safety lanyard with Riyadh metro hub crane machinery in backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhuWi0K2iCkqpZZT0D4ZW0evJ-u9RbrHmGRfIQoljL0ZPuzJhnG4XnjNqiMg1k_-aZo32-TFAk_Oty23CqNvmBSrQgGBRDgbH4KL43IJLHLO-OSX98arJueEej_aVNhxOZJDQYDn0gx4J9raoBONY63k0SckfkYU6ZCZugb7-Atrjef-juKnBdAlpn8ImCGeSIRNj2xTxuuMtw-sVv5mChbBo8vjKfsBsCa1yBPmr4"/>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface group-hover:text-primary transition-colors">Bilal Ahmed</span>
+<span class="px-1.5 py-0.2 rounded font-label-sm text-[10px] uppercase font-bold bg-surface-container text-on-surface-variant">PAK</span>
+</div>
+<div class="flex items-center gap-1 font-data-mono text-label-sm text-on-surface-variant">
+<span class="text-primary font-semibold">SR-8942</span>
+<span>•</span>
+<span>Iqama: 2310849201</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Tower Crane Operator</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Heavy Equipment Div.</span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Riyadh Metro Hub Pkg 4</span>
+<span class="font-body-sm text-body-sm text-secondary">Gulf MEP Contracting</span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed w-fit">
+<span class="material-symbols-outlined text-[16px] text-tertiary">warning</span>
+<span class="font-label-sm text-label-sm font-bold">Expiring in 5d</span>
+</div>
+<span class="block font-data-mono text-[11px] text-on-tertiary-container mt-0.5">TÜV Crane Cert renewal req.</span>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-1 flex-wrap max-w-xs">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-tertiary-fixed/40 text-on-tertiary-container font-semibold">TÜV Class 1</span>
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container text-primary font-semibold">SEC Gate #9</span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-low font-label-sm text-label-sm text-secondary font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Active On-Site
+                </span>
+</td>
+<td class="py-3 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-tertiary-container hover:text-tertiary transition-colors" title="Upload Replacement Doc" type="button">
+<span class="material-symbols-outlined text-[18px]">upload</span>
+</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" title="View Profile" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 3: Suresh Chandran (Overdue / Suspended) -->
+<tr class="hover:bg-error-container/10 transition-colors group">
+<td class="py-3 px-space-md">
+<input class="worker-chk w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="relative w-10 h-10 rounded-xl overflow-hidden shadow-sm shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Portrait photo of Suresh Chandran, an Indian certified scaffold inspector wearing a blue hardhat with reflective stickers, steel-toe footwear outline, and clean work shirt in front of modular industrial staging." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCZTZERYB2KGTFWHxC2-W1SOkId5YjEWN-CQqmqCZBfJdoxdP8nrLDyKfeLMBu6ESV5a8apAK9UKXG5KcaTOMUoCRzJ9g4B7E5du7M3XY96vVqpBle-950S_ZUPOgnL54F2XzWBN3xykXJw8G6A6i_VlO6o_-smI9Jc8Cntn_cWw04HsrD0kTFYFR6qR1r7qunVAWZB1Mc2KZ-Tq2jP3_r0YY4cxDvIQG2A8tn4Vcl"/>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface group-hover:text-primary transition-colors">Suresh Chandran</span>
+<span class="px-1.5 py-0.2 rounded font-label-sm text-[10px] uppercase font-bold bg-surface-container text-on-surface-variant">IND</span>
+</div>
+<div class="flex items-center gap-1 font-data-mono text-label-sm text-on-surface-variant">
+<span class="text-primary font-semibold">SR-8955</span>
+<span>•</span>
+<span>Iqama: 2390192847</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Master Scaffolder</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Staging &amp; Falsework</span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Red Sea Project (Phase 2)</span>
+<span class="font-body-sm text-body-sm text-secondary">Modern Scaffolding Co.</span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-error-container text-on-error-container w-fit">
+<span class="material-symbols-outlined text-[16px] text-error">cancel</span>
+<span class="font-label-sm text-label-sm font-bold">Action Req. (1 Expired)</span>
+</div>
+<span class="block font-data-mono text-[11px] text-error mt-0.5">Iqama expired 3 days ago</span>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-1 flex-wrap max-w-xs">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container text-on-surface-variant">CISRS Level 3</span>
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-error-container/40 text-error font-semibold">Qiwa: Inactive</span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-error-container text-error font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                  Barred at Turnstile
+                </span>
+</td>
+<td class="py-3 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-error hover:text-on-error-container transition-colors" title="Qiwa Fast-Renew" type="button">
+<span class="material-symbols-outlined text-[18px]">sync_problem</span>
+</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" title="View Profile" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 4: Omar Al-Ghamdi (Compliant) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-3 px-space-md">
+<input class="worker-chk w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="relative w-10 h-10 rounded-xl overflow-hidden shadow-sm shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Portrait photo of Omar Al-Ghamdi, a young Saudi mechanical supervisor with neatly groomed beard wearing safety helmet and high-visibility work uniform on a high-tech engineering campus in Riyadh." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn95uG7Zo8tefS7dKGu4F-_R1S2CO2jGRVsQ06kvKBex898wXi2JITNE-kUYqhVI0i7e5J27xIQyjqQ8aVC1GT2lYIoL8TC_yrkqa5e2zGWttIBM89qsqxeCr1snefynGOSpQLxtsKwVuLvLWpWVikBms2rweY9LN8_BmNT1dE50QSyicTl-ZL-lB6Fo8u2lK6eAzhoU1OPeT0jhVQDA-zMdSTHYtlA1rckqCdf0G0"/>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface group-hover:text-primary transition-colors">Omar Al-Ghamdi</span>
+<span class="px-1.5 py-0.2 rounded font-label-sm text-[10px] uppercase font-bold bg-secondary-container text-on-secondary-container">SAU NAT</span>
+</div>
+<div class="flex items-center gap-1 font-data-mono text-label-sm text-on-surface-variant">
+<span class="text-primary font-semibold">SR-8980</span>
+<span>•</span>
+<span>NatID: 1089201948</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">HV Electrical Specialist</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Substation Package</span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">NEOM Sector 4 (Spine)</span>
+<span class="font-body-sm text-body-sm text-secondary">Al-Fanar Civils (Tier 1)</span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container/50 text-on-secondary-container w-fit">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+<span class="font-label-sm text-label-sm font-bold">Compliant (5/5)</span>
+</div>
+<span class="block font-data-mono text-[11px] text-outline mt-0.5">Valid thru Jan 2027</span>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-1 flex-wrap max-w-xs">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-primary/10 text-primary font-semibold">SEC High-Voltage</span>
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container text-primary font-semibold">Lockout/Tagout</span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-low font-label-sm text-label-sm text-secondary font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Active On-Site
+                </span>
+</td>
+<td class="py-3 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-secondary transition-colors" title="Log Gate Clearance" type="button">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" title="View Profile" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 5: Farooq Aziz (Compliant) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-3 px-space-md">
+<input class="worker-chk w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="relative w-10 h-10 rounded-xl overflow-hidden shadow-sm shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Close-up headshot portrait of Farooq Aziz, an experienced Egyptian industrial pipe welder wearing a specialized protective welder cap and safety specs against the steel structural background of a desalination pipeline." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-90VWy0F-S1zPmNVzTy3mFX-hRoikDgp1HJLKZqnnoVEU02X7R52oP5tCjt6KOW2qb06Uil3ev9gaYgMmOPvwBHrQc5yiHWCxFOxS45tp00JBD8teZVbg2_4BgZgTTpLal8NU6jwC02pVRkgmAmw3RPd8zcR5gtGhKKWiHu5b2Zq51xQcQobERjOcebKo1bVzl2BM__CF9YY98l7M-W9fmXhtpNXZKXrvvxx58Ao1"/>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface group-hover:text-primary transition-colors">Farooq Aziz</span>
+<span class="px-1.5 py-0.2 rounded font-label-sm text-[10px] uppercase font-bold bg-surface-container text-on-surface-variant">EGY</span>
+</div>
+<div class="flex items-center gap-1 font-data-mono text-label-sm text-on-surface-variant">
+<span class="text-primary font-semibold">SR-9012</span>
+<span>•</span>
+<span>Iqama: 2409819230</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">6G Certified Welder</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Pressure Piping &amp; Tanks</span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Red Sea Project (Phase 2)</span>
+<span class="font-body-sm text-body-sm text-secondary">Gulf MEP Contracting</span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container/50 text-on-secondary-container w-fit">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+<span class="font-label-sm text-label-sm font-bold">Compliant (3/3)</span>
+</div>
+<span class="block font-data-mono text-[11px] text-outline mt-0.5">Valid thru Aug 2026</span>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-1 flex-wrap max-w-xs">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container text-primary font-semibold">ASME IX Welder</span>
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container text-on-surface-variant">Hot Work Permit</span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-low font-label-sm text-label-sm text-secondary font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Active On-Site
+                </span>
+</td>
+<td class="py-3 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-secondary transition-colors" title="Log Gate Clearance" type="button">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" title="View Profile" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 6: Rajesh Kumar (On Leave) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-3 px-space-md">
+<input class="worker-chk w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="relative w-10 h-10 rounded-xl overflow-hidden shadow-sm shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Portrait photo of Rajesh Kumar, a middle-aged South Asian site civil surveyor wearing protective safety eyewear, orange hi-vis vest and holding laser alignment transit with infrastructure works behind him." src="https://lh3.googleusercontent.com/aida-public/AB6AXuABAVmk9a2wJKe9DHdrerD_XgTedzLh3cc3d9YHWwMXSMNtjJ2ULlrVd7LqINST5H-qdgnvEm7RTFGJQidc9ArC7nyFTb7arWz1tTHXh0wdj74TpbVtbT07lZyovnH0NgKo_7alSA82nOnqXdAR2HFOFPuXWlDvviPWb1b5-9jp4ulIZYYuSxNWZdImZtuHUR4veRUv6odzD3Cg8lh0ZPMZQ6NgXpP4dwXBPAFwVz-s"/>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface group-hover:text-primary transition-colors">Rajesh Kumar</span>
+<span class="px-1.5 py-0.2 rounded font-label-sm text-[10px] uppercase font-bold bg-surface-container text-on-surface-variant">IND</span>
+</div>
+<div class="flex items-center gap-1 font-data-mono text-label-sm text-on-surface-variant">
+<span class="text-primary font-semibold">SR-9034</span>
+<span>•</span>
+<span>Iqama: 2289401928</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Topographic Surveyor</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Geomatic &amp; Earthworks</span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Riyadh Metro Hub Pkg 4</span>
+<span class="font-body-sm text-body-sm text-secondary">Al-Fanar Civils (Tier 1)</span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container/50 text-on-secondary-container w-fit">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+<span class="font-label-sm text-label-sm font-bold">Compliant (4/4)</span>
+</div>
+<span class="block font-data-mono text-[11px] text-outline mt-0.5">Valid thru Nov 2026</span>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-1 flex-wrap max-w-xs">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container text-primary font-semibold">Leica Certified</span>
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container text-on-surface-variant">Confined Space</span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                  Annual Leave
+                </span>
+</td>
+<td class="py-3 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-secondary transition-colors" title="Log Gate Clearance" type="button">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" title="View Profile" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 7: Tariq Al-Otaibi (Executive / Compliant) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-3 px-space-md">
+<input class="worker-chk w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="relative w-10 h-10 rounded-xl overflow-hidden shadow-sm shrink-0 bg-primary text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">engineering</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface group-hover:text-primary transition-colors">Eng. Tariq Al-Otaibi</span>
+<span class="px-1.5 py-0.2 rounded font-label-sm text-[10px] uppercase font-bold bg-secondary-container text-on-secondary-container">SAU NAT</span>
+</div>
+<div class="flex items-center gap-1 font-data-mono text-label-sm text-on-surface-variant">
+<span class="text-primary font-semibold">SR-8800</span>
+<span>•</span>
+<span>NatID: 1048209481</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Corporate HSE Director</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Governance &amp; Audit</span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Multi-Site Authority</span>
+<span class="font-body-sm text-body-sm text-secondary">Al-Fanar PMO</span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container/50 text-on-secondary-container w-fit">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span class="font-label-sm text-label-sm font-bold">Compliant (6/6)</span>
+</div>
+<span class="block font-data-mono text-[11px] text-outline mt-0.5">Valid thru Dec 2028</span>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-1 flex-wrap max-w-xs">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-primary text-on-primary font-semibold">Lead Auditor ISO</span>
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container text-primary font-semibold">NEBOSH Env</span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-fixed/40 text-on-secondary-fixed font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  All-Gates Pass
+                </span>
+</td>
+<td class="py-3 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-secondary transition-colors" title="Log Gate Clearance" type="button">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" title="View Profile" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination Toolbar -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md px-space-lg py-space-md bg-surface-container-lowest">
+<div class="flex items-center gap-space-md">
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+            Showing <span class="font-semibold text-on-surface">1–10</span> of <span class="font-semibold text-on-surface">152</span> employees
+          </span>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Rows:</span>
+<select class="bg-surface-container-low px-2 py-1 rounded-lg font-data-mono text-label-sm text-on-surface focus:outline-none cursor-pointer">
+<option>10</option>
+<option>25</option>
+<option>50</option>
+<option>100</option>
+</select>
+</div>
+</div>
+<!-- Pagination Controls -->
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-outline hover:bg-surface-container hover:text-on-surface transition-colors disabled:opacity-40" disabled="" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-primary text-on-primary font-data-mono text-label-sm font-semibold flex items-center justify-center shadow-sm" type="button">1</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container text-on-surface font-data-mono text-label-sm font-semibold flex items-center justify-center transition-colors" type="button">2</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container text-on-surface font-data-mono text-label-sm font-semibold flex items-center justify-center transition-colors" type="button">3</button>
+<span class="px-1 text-outline font-data-mono text-label-sm">...</span>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container text-on-surface font-data-mono text-label-sm font-semibold flex items-center justify-center transition-colors" type="button">16</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Empty State Container (Hidden by default, toggled via button) -->
+<div class="hidden flex-col items-center justify-center p-space-2xl bg-surface-container-lowest rounded-xl shadow-sm text-center my-space-md" id="empty-state-view">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[36px] text-outline">group_off</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold mb-space-xs">No Workforce Records Found</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mb-space-lg">
+        No active site personnel match your current search query or filter parameters. Try resetting your filter criteria or import a new workforce batch.
+      </p>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-2 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg transition-colors" onclick="resetFiltersAndShowTable()" type="button">
+          Reset Filter Queries
+        </button>
+<button class="px-space-md py-2 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg shadow-sm hover:bg-primary-container transition-colors" type="button">
+          + Add First Site Employee
+        </button>
+</div>
+</div>
+<!-- Slide-Out Drawer / Modal Preview: Quick Biometric & Certificate Log -->
+<div class="fixed inset-0 bg-primary-container/40 backdrop-blur-sm z-50 hidden transition-opacity" id="employee-drawer-backdrop">
+<div class="fixed inset-y-0 right-0 w-full max-w-lg bg-surface-container-lowest shadow-2xl flex flex-col justify-between transform translate-x-full transition-transform duration-300" id="employee-drawer-panel">
+<!-- Drawer Header -->
+<div class="p-space-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-secondary text-on-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">person_add</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">New Employee Roster Entry</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Live Qiwa / Muqeem Verification</p>
+</div>
+</div>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant transition-colors" id="close-drawer-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Drawer Body Form -->
+<div class="p-space-lg overflow-y-auto flex-1 flex flex-col gap-space-md">
+<!-- National / Iqama Input -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface font-semibold">National ID / Iqama Number *</label>
+<div class="relative flex items-center">
+<input class="w-full px-space-md py-2.5 rounded-xl bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="e.g. 2489103984 (10 digits)" type="text"/>
+<button class="absolute right-2 px-2.5 py-1 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm font-semibold hover:bg-primary-container transition-colors" type="button">Verify Qiwa</button>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Automatic fetch: full legal name, sponsor CR, occupation, and Iqama expiry.</span>
+</div>
+<!-- Name & Nationality -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Full Legal Name</label>
+<input class="w-full px-space-md py-2 rounded-xl bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none" placeholder="As per official ID" type="text"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Nationality</label>
+<select class="w-full px-space-md py-2 rounded-xl bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none cursor-pointer">
+<option>Saudi Arabia (SAU)</option>
+<option>Pakistan (PAK)</option>
+<option>India (IND)</option>
+<option>Egypt (EGY)</option>
+<option>Philippines (PHL)</option>
+</select>
+</div>
+</div>
+<!-- Trade & Subcontractor -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Trade / Specialty</label>
+<input class="w-full px-space-md py-2 rounded-xl bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none" placeholder="e.g. Crane Operator" type="text"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Subcontractor</label>
+<select class="w-full px-space-md py-2 rounded-xl bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none cursor-pointer">
+<option>Al-Fanar Civils (Tier 1)</option>
+<option>Gulf MEP Contracting</option>
+<option>Modern Scaffolding Co.</option>
+</select>
+</div>
+</div>
+<!-- Site Allocation -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Assigned Construction Site</label>
+<select class="w-full px-space-md py-2 rounded-xl bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none cursor-pointer">
+<option>NEOM Sector 4 (Spine)</option>
+<option>Riyadh Metro Hub Package 4</option>
+<option>Red Sea Project (Phase 2)</option>
+</select>
+</div>
+<!-- Document Upload Dropzone -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Trade Certifications &amp; Medical Clearance</label>
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col items-center justify-center text-center cursor-pointer hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[32px] text-secondary mb-1">cloud_upload</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Drop Certificate PDF, Scans or Click to Browse</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant mt-0.5">Supports TÜV, Aramco OSP, OSHA, First Aid cards (Max 25MB)</span>
+</div>
+</div>
+</div>
+<!-- Drawer Footer Actions -->
+<div class="p-space-lg bg-surface-container-low flex items-center justify-end gap-space-sm">
+<button class="px-space-md py-2.5 rounded-xl bg-surface-container-lowest text-on-surface font-label-lg text-label-lg hover:bg-surface-container transition-colors" id="cancel-drawer-btn" type="button">Cancel</button>
+<button class="px-space-lg py-2.5 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg shadow-sm hover:bg-primary-container transition-colors" type="button">Verify &amp; Provision Pass</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Filter state & toggle interactions
+  function setFilter(type) {
+    const rows = document.querySelectorAll('#worker-table-body tr');
+    const tableContainer = document.getElementById('roster-table-container');
+    const emptyState = document.getElementById('empty-state-view');
+
+    tableContainer.classList.remove('hidden');
+    emptyState.classList.add('hidden');
+
+    if (type === 'all') {
+      rows.forEach(r => r.style.display = '');
+    } else if (type === 'compliant') {
+      rows.forEach(r => {
+        const text = r.innerText.toLowerCase();
+        r.style.display = text.includes('compliant') ? '' : 'none';
+      });
+    } else if (type === 'expiring') {
+      rows.forEach(r => {
+        const text = r.innerText.toLowerCase();
+        r.style.display = text.includes('expiring') ? '' : 'none';
+      });
+    } else if (type === 'overdue') {
+      rows.forEach(r => {
+        const text = r.innerText.toLowerCase();
+        r.style.display = (text.includes('action req') || text.includes('barred')) ? '' : 'none';
+      });
+    }
+  }
+
+  // Toggle Empty State Demonstration
+  const toggleEmptyBtn = document.getElementById('toggle-empty-state-btn');
+  const rosterTable = document.getElementById('roster-table-container');
+  const emptyView = document.getElementById('empty-state-view');
+
+  if (toggleEmptyBtn) {
+    toggleEmptyBtn.addEventListener('click', () => {
+      const isHidden = emptyView.classList.contains('hidden');
+      if (isHidden) {
+        rosterTable.classList.add('hidden');
+        emptyView.classList.remove('hidden');
+        toggleEmptyBtn.querySelector('span:last-child').textContent = 'Restore Table View';
+      } else {
+        rosterTable.classList.remove('hidden');
+        emptyView.classList.add('hidden');
+        toggleEmptyBtn.querySelector('span:last-child').textContent = 'Simulate Empty State';
+      }
+    });
+  }
+
+  function resetFiltersAndShowTable() {
+    rosterTable.classList.remove('hidden');
+    emptyView.classList.add('hidden');
+    if (toggleEmptyBtn) {
+      toggleEmptyBtn.querySelector('span:last-child').textContent = 'Simulate Empty State';
+    }
+    const searchInput = document.getElementById('worker-search-input');
+    if (searchInput) searchInput.value = '';
+    setFilter('all');
+  }
+
+  // Master Checkbox Toggle
+  const selectAll = document.getElementById('select-all-checkbox');
+  if (selectAll) {
+    selectAll.addEventListener('change', (e) => {
+      document.querySelectorAll('.worker-chk').forEach(chk => chk.checked = e.target.checked);
+    });
+  }
+
+  // Drawer Open/Close Logic
+  const addBtn = document.getElementById('btn-add-employee');
+  const drawerBackdrop = document.getElementById('employee-drawer-backdrop');
+  const drawerPanel = document.getElementById('employee-drawer-panel');
+  const closeDrawerBtn = document.getElementById('close-drawer-btn');
+  const cancelDrawerBtn = document.getElementById('cancel-drawer-btn');
+
+  function openDrawer() {
+    drawerBackdrop.classList.remove('hidden');
+    setTimeout(() => {
+      drawerPanel.classList.remove('translate-x-full');
+    }, 10);
+  }
+
+  function closeDrawer() {
+    drawerPanel.classList.add('translate-x-full');
+    setTimeout(() => {
+      drawerBackdrop.classList.add('hidden');
+    }, 300);
+  }
+
+  if (addBtn) addBtn.addEventListener('click', openDrawer);
+  if (closeDrawerBtn) closeDrawerBtn.addEventListener('click', closeDrawer);
+  if (cancelDrawerBtn) cancelDrawerBtn.addEventListener('click', closeDrawer);
+  if (drawerBackdrop) {
+    drawerBackdrop.addEventListener('click', (e) => {
+      if (e.target === drawerBackdrop) closeDrawer();
+    });
+  }
+
+  // Live filter on search input
+  const searchField = document.getElementById('worker-search-input');
+  if (searchField) {
+    searchField.addEventListener('input', (e) => {
+      const q = e.target.value.toLowerCase().trim();
+      const rows = document.querySelectorAll('#worker-table-body tr');
+      let visibleCount = 0;
+      rows.forEach(r => {
+        const text = r.innerText.toLowerCase();
+        if (text.includes(q)) {
+          r.style.display = '';
+          visibleCount++;
+        } else {
+          r.style.display = 'none';
+        }
+      });
+
+      if (visibleCount === 0 && q.length > 0) {
+        rosterTable.classList.add('hidden');
+        emptyView.classList.remove('hidden');
+      } else {
+        rosterTable.classList.remove('hidden');
+        emptyView.classList.add('hidden');
+      }
+    });
+  }
+</script></main></div></body></html>

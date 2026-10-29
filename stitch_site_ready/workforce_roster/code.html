@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+<html dir="ltr" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>SiteReady GCC</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-surface": "#0b1c30", "tertiary-fixed-dim": "#fabc4a", "surface-dim": "#cbdbf5", "surface-container-lowest": "#ffffff", "secondary": "#006a62", "on-tertiary-container": "#c68e1d", "on-error": "#ffffff", "on-error-container": "#93000a", "on-secondary-fixed": "#00201d", "on-primary-fixed-variant": "#2e4867", "error-container": "#ffdad6", "surface-container-high": "#dce9ff", "primary": "#001d37", "on-tertiary-fixed-variant": "#5f4100", "primary-fixed": "#d2e4ff", "primary-fixed-dim": "#aec9ed", "tertiary-container": "#422c00", "on-background": "#0b1c30", "on-secondary-container": "#007168", "secondary-fixed": "#90f4e8", "on-secondary": "#ffffff", "surface-tint": "#466080", "tertiary-fixed": "#ffdeab", "surface-container": "#e5eeff", "on-primary-fixed": "#001d37", "background": "#f8f9ff", "surface-variant": "#d3e4fe", "on-primary": "#ffffff", "on-tertiary": "#ffffff", "inverse-surface": "#213145", "surface": "#f8f9ff", "primary-container": "#16324f", "surface-container-highest": "#d3e4fe", "surface-bright": "#f8f9ff", "on-primary-container": "#809abd", "inverse-primary": "#aec9ed", "secondary-fixed-dim": "#73d7cb", "outline-variant": "#c3c6ce", "error": "#ba1a1a", "on-surface-variant": "#43474d", "surface-container-low": "#eff4ff", "tertiary": "#281900", "on-secondary-fixed-variant": "#00504a", "inverse-on-surface": "#eaf1ff", "on-tertiary-fixed": "#271900", "secondary-container": "#90f4e8", "outline": "#74777e" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "gutter-mobile": "0.75rem", "space-xl": "2rem", "space-2xl": "3rem", "space-xs": "0.25rem", "space-md": "1rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "gutter": "1.5rem", "margin-mobile": "1rem", "margin": "2rem" }, fontFamily: { "body-md": ["Inter"], "data-mono": ["Inter"], "headline-lg": ["Inter"], "headline-md": ["Inter"], "label-sm": ["Inter"], "label-md": ["Inter"], "headline-xl": ["Inter"], "body-sm": ["Inter"], "headline-sm": ["Inter"], "label-lg": ["Inter"], "headline-xl-mobile": ["Inter"], "body-lg": ["Inter"] }, fontSize: { "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }], "data-mono": ["13px", { lineHeight: "18px", fontWeight: "500" }], "headline-lg": ["24px", { lineHeight: "32px", fontWeight: "600" }], "headline-md": ["20px", { lineHeight: "28px", fontWeight: "600" }], "label-sm": ["11px", { lineHeight: "14px", fontWeight: "500" }], "label-md": ["12px", { lineHeight: "16px", fontWeight: "600" }], "headline-xl": ["32px", { lineHeight: "40px", fontWeight: "700" }], "body-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }], "headline-sm": ["18px", { lineHeight: "24px", fontWeight: "600" }], "label-lg": ["14px", { lineHeight: "20px", fontWeight: "600" }], "headline-xl-mobile": ["26px", { lineHeight: "34px", fontWeight: "700" }], "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }] } } } };</script><style>@layer base { html, body { width: 100%; margin: 0; padding: 0; } body { overscroll-behavior-y: none; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-background font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-28 px-margin-mobile flex flex-col justify-center gap-space-xs"><div class="flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="SiteReady GCC Logo" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1VX1V9SdRFFhgpboEFUm-W8JErTdQ41dlAyiY7-1B6v4Gk_xMV6YnX6rfBNzva_JqoI8tlkJ2l5Hl3Rrwl2U4tnqmLyWgqjBIUG9etkwyKSbtxJnY5sRXBbEOPRBgL-GmsMzVuMp2mvJOZQL-ba9tzViN2M4YQ3AuGdfB4AFiY9PN8kTULEtL4eX2z3l5L05jr_3zjMGVpuUa3gvzSD_R2dJz8Ejv4wF0MOxKiLA_brkA"/><div class="flex flex-col min-w-0"><span class="font-label-lg text-label-lg text-primary tracking-tight truncate">SiteReady GCC</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Workforce Roster</span></div></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="Switch language between English and Arabic" class="min-h-[44px] px-space-xs py-space-xs flex items-center justify-center bg-surface-container-high rounded-full" type="button"><div class="flex items-center bg-primary-container text-on-primary px-space-xs py-0.5 rounded-full font-label-sm text-label-sm"><span class="px-1 font-bold">EN</span><span class="text-outline-variant text-[10px]">|</span><span class="px-1 font-normal opacity-70">العربية</span></div></button><button aria-label="View alerts and notifications" class="relative w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2 right-2 w-4 h-4 bg-error text-on-error rounded-full flex items-center justify-center font-label-sm text-[10px] font-bold">3</span></button><div class="w-11 h-11 flex items-center justify-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-container/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDX0bfOnq24Yj6EFGBbBDP2qZVscBo-1qP_7GCcxbtrra-QRTQ0MavLt14lsguiAx37fSS4vFzbq8nAvZ7tCkTdwjtOVyfq_bW5llFXWrSCGui3yA2Mj1GMualwRKhUNaRnl0WyunWUEEhrLezEzmZuIXaeKJjptNVTqXL-uF0lV_H309CVnu7dvlGitbP9iNzV1eTo83zZk7dFEdIG4i5YZvCGsO-aDLFP3Qacm9Ie"/></div></div></div><div class="flex items-center justify-between gap-space-xs pt-0.5"><div class="flex items-center gap-1.5 px-space-sm py-1 bg-surface-container rounded-full min-w-0 max-w-[240px]"><span class="material-symbols-outlined text-[16px] text-secondary shrink-0">location_on</span><span class="font-label-sm text-label-sm text-on-surface font-semibold truncate">NEOM Spine Sector 4</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant shrink-0">arrow_drop_down</span></div><div class="flex items-center gap-1 text-secondary font-label-sm text-label-sm font-semibold"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span>Site Active</span></div></div></div></header><main class="flex flex-col relative w-full pt-28 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full px-margin-mobile pb-space-2xl space-y-space-md">
+<!-- Overview Summary & Live Gate Sync -->
+<div class="flex items-center justify-between bg-surface-container-low px-space-md py-space-sm rounded-xl">
+<div class="flex items-center space-x-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">verified_user</span>
+<span class="font-label-md text-label-md text-on-surface">Gate 04 Active Roster</span>
+</div>
+<div class="flex items-center space-x-1 text-on-surface-variant font-data-mono text-data-mono">
+<span>152 Logged</span>
+<span class="text-outline-variant">•</span>
+<span class="text-secondary font-semibold">91.4% Rate</span>
+</div>
+</div>
+<!-- Search & Filter Area -->
+<div class="flex flex-col space-y-space-sm">
+<!-- Search Field -->
+<div class="relative w-full flex items-center bg-surface-container-lowest rounded-xl shadow-sm">
+<span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[20px]">search</span>
+<input class="w-full pl-10 pr-10 py-3 bg-transparent text-on-surface font-body-md text-body-md placeholder:text-on-surface-variant focus:outline-none" id="workerSearchInput" placeholder="Search by name, Iqama ID, or trade..." type="search"/>
+<button aria-label="Scan barcode or QR" class="absolute right-2 p-1.5 text-on-surface-variant hover:text-primary rounded-lg" type="button">
+<span class="material-symbols-outlined text-[20px]">qr_code_scanner</span>
+</button>
+</div>
+<!-- Status Tabs -->
+<div class="flex items-center space-x-space-xs overflow-x-auto py-0.5 no-scrollbar">
+<button class="filter-tab px-space-md py-2 bg-primary text-on-primary rounded-xl font-label-md text-label-md whitespace-nowrap shadow-sm" data-filter="all" type="button">
+        All (152)
+      </button>
+<button class="filter-tab px-space-md py-2 bg-surface-container text-on-surface-variant hover:bg-surface-container-high rounded-xl font-label-md text-label-md whitespace-nowrap" data-filter="compliant" type="button">
+        Compliant (139)
+      </button>
+<button class="filter-tab px-space-md py-2 bg-surface-container text-on-surface-variant hover:bg-surface-container-high rounded-xl font-label-md text-label-md whitespace-nowrap" data-filter="expiring" type="button">
+        Expiring (8)
+      </button>
+<button class="filter-tab px-space-md py-2 bg-surface-container text-on-surface-variant hover:bg-surface-container-high rounded-xl font-label-md text-label-md whitespace-nowrap" data-filter="overdue" type="button">
+        Overdue (5)
+      </button>
+</div>
+<!-- Subcontractor Filter Selector -->
+<div class="relative bg-surface-container-lowest px-space-md py-2.5 rounded-xl shadow-sm flex items-center justify-between cursor-pointer">
+<div class="flex items-center space-x-2 min-w-0">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0">apartment</span>
+<div class="truncate font-body-sm text-body-sm text-on-surface">
+<span class="font-semibold text-primary">All Subcontractors</span>
+<span class="text-on-surface-variant mx-1">•</span>
+<span class="text-on-surface-variant">Al-Bawani Civils, Gulf MEP, Modern Scaffolding</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px] shrink-0 ml-1">expand_more</span>
+</div>
+<!-- Quick Trade Filter Chips -->
+<div class="flex items-center space-x-space-xs overflow-x-auto py-0.5 no-scrollbar">
+<span class="font-label-sm text-label-sm text-on-surface-variant whitespace-nowrap px-1">Trades:</span>
+<button class="trade-chip px-2.5 py-1 bg-surface-container-low text-on-surface rounded-lg font-label-sm text-label-sm whitespace-nowrap active:bg-surface-container-high" type="button">
+        Scaffolder
+      </button>
+<button class="trade-chip px-2.5 py-1 bg-surface-container-low text-on-surface rounded-lg font-label-sm text-label-sm whitespace-nowrap active:bg-surface-container-high" type="button">
+        Welder
+      </button>
+<button class="trade-chip px-2.5 py-1 bg-surface-container-low text-on-surface rounded-lg font-label-sm text-label-sm whitespace-nowrap active:bg-surface-container-high" type="button">
+        Electrician
+      </button>
+<button class="trade-chip px-2.5 py-1 bg-surface-container-low text-on-surface rounded-lg font-label-sm text-label-sm whitespace-nowrap active:bg-surface-container-high" type="button">
+        Crane Op
+      </button>
+</div>
+</div>
+<!-- Compliance Workers Roster Stack -->
+<div class="flex flex-col space-y-space-md" id="rosterCardsList">
+<!-- Card 1: Mohammad Salem (COMPLIANT) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col space-y-space-sm" data-status="compliant">
+<div class="flex items-start justify-between">
+<div class="flex items-start space-x-space-sm min-w-0">
+<img class="w-12 h-12 rounded-xl object-cover shrink-0 bg-surface-container" data-alt="Professional profile headshot of a middle-aged Arab construction rigging supervisor wearing a white hardhat and hi-vis vest on an industrial site in NEOM Saudi Arabia" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcFvEYctNA3D-UiimC-KSA5qFB70HzZVqtwBEgzG2ly_6UYi9yIYvg69PCu39MpnD12iQgt6oP0TmTXzmM8CRRkb9OrJbg_d-BzkXxAHOlKZ4A-Wg5xXUFZ80pn4Z3tVdaPYJT-4Sz4GhIOm4JdUTwpVkwiY_CfyQnx8G0OHWTFkoGx28-A_6n0RxIyLyvpehhThN7VkNZ9YQNOkVfeSqSQAOPqis-MhiDlYlPTg8o"/>
+<div class="flex flex-col min-w-0">
+<h2 class="font-headline-sm text-headline-sm text-on-surface truncate">Mohammad Salem</h2>
+<div class="flex items-center space-x-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="font-data-mono">IQAMA #2398412093</span>
+<span>•</span>
+<span class="truncate">Red Sea Rigs</span>
+</div>
+<span class="font-body-sm text-body-sm text-primary font-medium truncate mt-0.5">Senior Rigging Specialist</span>
+</div>
+</div>
+<!-- Status Badge -->
+<span class="px-2 py-1 bg-secondary-fixed text-on-secondary-fixed rounded-lg font-label-sm text-label-sm font-semibold flex items-center space-x-1 shrink-0">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>COMPLIANT</span>
+</span>
+</div>
+<!-- Certifications & Badges -->
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 bg-surface-container text-on-surface rounded-md font-label-sm text-label-sm">Aramco Certified</span>
+<span class="px-2 py-0.5 bg-surface-container text-on-surface rounded-md font-label-sm text-label-sm">TUV Rheinland</span>
+<span class="px-2 py-0.5 bg-surface-container text-on-surface rounded-md font-label-sm text-label-sm">First Aid L2</span>
+</div>
+<!-- Audit Footer -->
+<div class="flex items-center justify-between pt-2 border-t-0 bg-surface-container-low px-space-sm py-2 rounded-lg">
+<div class="flex items-center space-x-1.5 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>14 mos remaining (Valid to Jun 2026)</span>
+</div>
+<button aria-label="View worker profile" class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-primary active:bg-surface-container" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Card 2: Bilal Ahmed (EXPIRES IN 5 DAYS) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col space-y-space-sm" data-status="expiring">
+<div class="flex items-start justify-between">
+<div class="flex items-start space-x-space-sm min-w-0">
+<img class="w-12 h-12 rounded-xl object-cover shrink-0 bg-surface-container" data-alt="Portrait photo of a South Asian heavy equipment driver wearing a high-visibility yellow jacket, reflective safety glasses, and hardhat at a mega-project desert site" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIP0L9U62QeDkZbgOYFZh6VIoI0uA_QyO32rgYHI_J4XRJvM2orxIQI8T83CTn5hRBpxDEGQG05rTfB8fp2yPpbrYSwlm9HCQwwl70-c3ZsYHZXM0PlmN0E8hYlgwy75gIsydHyxUBtglfCBQEi-txfP-aR2WF6xhr31ENo7aKOBihnxKgbV4o6ohTStefef8TYu7-elIKAa2gCyI8Xh45APw6hewUvsMqudhhBmHd"/>
+<div class="flex flex-col min-w-0">
+<h2 class="font-headline-sm text-headline-sm text-on-surface truncate">Bilal Ahmed</h2>
+<div class="flex items-center space-x-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="font-data-mono">IQAMA #2481029411</span>
+<span>•</span>
+<span class="truncate">Gulf MEP Fleet</span>
+</div>
+<span class="font-body-sm text-body-sm text-primary font-medium truncate mt-0.5">Heavy Equipment Operator (JCB/Excavator)</span>
+</div>
+</div>
+<!-- Status Badge -->
+<span class="px-2 py-1 bg-tertiary-fixed text-on-tertiary-fixed rounded-lg font-label-sm text-label-sm font-semibold flex items-center space-x-1 shrink-0">
+<span class="material-symbols-outlined text-[14px]">timer</span>
+<span>EXPIRES IN 5D</span>
+</span>
+</div>
+<!-- Warning Callout Note -->
+<div class="flex items-center space-x-2 bg-tertiary-fixed-dim/20 px-space-sm py-2 rounded-lg">
+<span class="material-symbols-outlined text-on-tertiary-container text-[18px] shrink-0">warning</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate">Saudi Driving Heavy License expires 12 May 2025</span>
+</div>
+<!-- Quick Actions -->
+<div class="flex items-center justify-between pt-1">
+<span class="text-on-surface-variant font-label-sm text-label-sm">Gate Pass Alert Queued</span>
+<button class="px-3 py-1.5 bg-primary-container text-on-primary rounded-lg font-label-sm text-label-sm font-semibold flex items-center space-x-1 shadow-sm active:bg-primary" type="button">
+<span class="material-symbols-outlined text-[16px]">campaign</span>
+<span>Notify Supervisor</span>
+</button>
+</div>
+</div>
+<!-- Card 3: Suresh Chandran (EXPIRED / WORK PERMIT SUSPENDED) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col space-y-space-sm" data-status="overdue">
+<div class="flex items-start justify-between">
+<div class="flex items-start space-x-space-sm min-w-0">
+<img class="w-12 h-12 rounded-xl object-cover shrink-0 bg-surface-container" data-alt="Portrait photo of an Indian electrical engineer with safety goggles and blue work overalls standing near high-voltage electrical substation equipment under daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDju8j1M75m-ZOO0WPdOi16BYTv_wKLQHTefZSbTeRFXObkKH-3NwbXIoU7GaV9_ach7JO-d77dJkdG_30l_CFWXvWwCSCIsWecd4b2zfwn2cF6WOyD-91KnzI0MTiOGqagwjrxAA_hOcHXyDrgLGC1q5bxrbJGDANDQJe1MoMly7Kci2OaRyh_7NoxHZrRXZejln2GOgqANxIvnsGeVkx6o2r9lSgm8YO5n57b-PYG"/>
+<div class="flex flex-col min-w-0">
+<h2 class="font-headline-sm text-headline-sm text-on-surface truncate">Suresh Chandran</h2>
+<div class="flex items-center space-x-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="font-data-mono">IQAMA #2190384752</span>
+<span>•</span>
+<span class="truncate">Al-Bawani Civils</span>
+</div>
+<span class="font-body-sm text-body-sm text-primary font-medium truncate mt-0.5">Certified High Voltage Electrician</span>
+</div>
+</div>
+<!-- Overdue Status Badge -->
+<span class="px-2 py-1 bg-error-container text-on-error-container rounded-lg font-label-sm text-label-sm font-semibold flex items-center space-x-1 shrink-0">
+<span class="material-symbols-outlined text-[14px]">block</span>
+<span>OVERDUE (3D)</span>
+</span>
+</div>
+<!-- Suspended Banner -->
+<div class="flex items-center space-x-2 bg-error-container/40 px-space-sm py-2 rounded-lg">
+<span class="material-symbols-outlined text-error text-[18px] shrink-0">error</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-error">Work Permit Suspended</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Gate access blocked automatically by HSE rules.</span>
+</div>
+</div>
+<!-- Action Footer -->
+<div class="flex items-center justify-between pt-1">
+<span class="text-error font-data-mono text-label-sm font-medium">Sec Certificate #EC-809</span>
+<button class="px-3 py-1.5 bg-secondary text-on-secondary rounded-lg font-label-sm text-label-sm font-semibold flex items-center space-x-1 shadow-sm active:bg-secondary/90" type="button">
+<span class="material-symbols-outlined text-[16px]">upload_file</span>
+<span>Renew / Upload Doc</span>
+</button>
+</div>
+</div>
+<!-- Card 4: Omar Al-Ghamdi (COMPLIANT) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col space-y-space-sm" data-status="compliant">
+<div class="flex items-start justify-between">
+<div class="flex items-start space-x-space-sm min-w-0">
+<img class="w-12 h-12 rounded-xl object-cover shrink-0 bg-surface-container" data-alt="Portrait of a young professional Saudi safety inspector wearing an official high-visibility safety harness, hardhat, and holding a digital inspection tablet outdoor on a construction zone" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA16CIbkrQ2qKDPc3IeQOp_a63eVwSOT_uoBwlIYt73SC1vA82tjyL0ckHt7M1cWVCL3ZOBZBVYkku5sM6bwDXtjg4tqIsTi7xL-yP-CQGzo2xQDzxv8uKrRpNhmg3SwA8A-GBu1UuvMSAsVOww_oJHBVl-ATRThO7cWypzE6iqkHoopC6nCykEgoCiBNq0lHFPqk1nHsbr_Oh17kHEh_gzispFKmOIjB3VJm6zusfT"/>
+<div class="flex flex-col min-w-0">
+<h2 class="font-headline-sm text-headline-sm text-on-surface truncate">Omar Al-Ghamdi</h2>
+<div class="flex items-center space-x-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="font-data-mono">IQAMA #1092837465</span>
+<span>•</span>
+<span class="truncate">Modern Scaffolding</span>
+</div>
+<span class="font-body-sm text-body-sm text-primary font-medium truncate mt-0.5">HSE Site Safety Inspector</span>
+</div>
+</div>
+<!-- Status Badge -->
+<span class="px-2 py-1 bg-secondary-fixed text-on-secondary-fixed rounded-lg font-label-sm text-label-sm font-semibold flex items-center space-x-1 shrink-0">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>COMPLIANT</span>
+</span>
+</div>
+<!-- Certification Badges -->
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 bg-surface-container text-on-surface rounded-md font-label-sm text-label-sm">NEBOSH IGC</span>
+<span class="px-2 py-0.5 bg-surface-container text-on-surface rounded-md font-label-sm text-label-sm">OSHA 30-Hour</span>
+<span class="px-2 py-0.5 bg-surface-container text-on-surface rounded-md font-label-sm text-label-sm">IOSH Managing Safely</span>
+</div>
+<!-- Audit Footer -->
+<div class="flex items-center justify-between pt-2 bg-surface-container-low px-space-sm py-2 rounded-lg">
+<div class="flex items-center space-x-1.5 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>All 6 Mandatory Badges Validated</span>
+</div>
+<button aria-label="View inspector details" class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-primary active:bg-surface-container" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Card 5: Farooq Aziz (EXPIRING IN 12 DAYS) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col space-y-space-sm" data-status="expiring">
+<div class="flex items-start justify-between">
+<div class="flex items-start space-x-space-sm min-w-0">
+<img class="w-12 h-12 rounded-xl object-cover shrink-0 bg-surface-container" data-alt="Portrait photo of a Pakistani petrochemical industrial worker in safety gear with gas detector equipment clipped to his chest, clear protective goggles, and a yellow hardhat" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD22TLxccygWSMBJ4stBGOw6ber8rPl5cgSs6VreGTxivjTp1hSq-taWbkWiv_AdCzp1iaJijslObBqCjIcbn0i207jS_XpuL9Rte_0ryvTyCbfUHyawq_YTzc1i1uJO77UZSrl_KQcRdk29fW4rgilMVuuiMFtMqevCw42pBuf8a0aWRQRM6H4rX6Yz38U01VQBqm_BQT2ofdhSqzCEWhxGRv8EZSoBu0JMPlAaUX-"/>
+<div class="flex flex-col min-w-0">
+<h2 class="font-headline-sm text-headline-sm text-on-surface truncate">Farooq Aziz</h2>
+<div class="flex items-center space-x-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="font-data-mono">IQAMA #2551928340</span>
+<span>•</span>
+<span class="truncate">Red Sea Rigs</span>
+</div>
+<span class="font-body-sm text-body-sm text-primary font-medium truncate mt-0.5">Confined Space Entry Attendant</span>
+</div>
+</div>
+<!-- Status Badge -->
+<span class="px-2 py-1 bg-tertiary-fixed text-on-tertiary-fixed rounded-lg font-label-sm text-label-sm font-semibold flex items-center space-x-1 shrink-0">
+<span class="material-symbols-outlined text-[14px]">timer</span>
+<span>EXPIRING IN 12D</span>
+</span>
+</div>
+<!-- Cert Note -->
+<div class="flex items-center space-x-2 bg-surface-container-low px-space-sm py-2 rounded-lg">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0">air</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate">Gas Tester &amp; Breathing Apparatus certification</span>
+</div>
+<!-- Quick Action -->
+<div class="flex items-center justify-between pt-1">
+<span class="text-on-surface-variant font-label-sm text-label-sm">Refresher Scheduled: 18 May</span>
+<button class="px-3 py-1.5 bg-primary-container text-on-primary rounded-lg font-label-sm text-label-sm font-semibold flex items-center space-x-1 shadow-sm active:bg-primary" type="button">
+<span class="material-symbols-outlined text-[16px]">notifications_active</span>
+<span>Send Reminder</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Pagination & Count Indicator -->
+<div class="flex flex-col items-center justify-center space-y-space-xs pt-space-sm pb-space-lg">
+<div class="flex items-center space-x-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="font-semibold text-primary">Showing 5 of 152 workers</span>
+<span>•</span>
+<span>Synced 2m ago</span>
+</div>
+<div class="w-full max-w-[200px] h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="w-1/6 h-full bg-secondary rounded-full"></div>
+</div>
+</div>
+<!-- Sticky Floating Action Button (FAB) -->
+<div class="fixed bottom-20 left-0 right-0 px-margin-mobile flex justify-center z-40 pointer-events-none">
+<button aria-label="Onboard Worker or Scan Iqama" class="pointer-events-auto h-12 px-space-lg bg-primary-container text-on-primary rounded-full shadow-xl flex items-center space-x-2 font-label-lg text-label-lg active:scale-95 transition-transform" id="onboardWorkerFab" type="button">
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed">badge</span>
+<span>+ Onboard Worker / Scan Iqama</span>
+</button>
+</div>
+</div>
+<script>
+  (function initRosterInteractions() {
+    const filterTabs = document.querySelectorAll('.filter-tab');
+    const workerCards = document.querySelectorAll('#rosterCardsList > div');
+    const searchInput = document.getElementById('workerSearchInput');
+
+    function applyFilter(filter) {
+      workerCards.forEach(card => {
+        const cardStatus = card.getAttribute('data-status');
+        if (filter === 'all' || cardStatus === filter) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    filterTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        filterTabs.forEach(t => {
+          t.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+          t.classList.add('bg-surface-container', 'text-on-surface-variant');
+        });
+        tab.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+        tab.classList.remove('bg-surface-container', 'text-on-surface-variant');
+        applyFilter(tab.getAttribute('data-filter'));
+      });
+    });
+
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase().trim();
+        workerCards.forEach(card => {
+          const text = card.textContent.toLowerCase();
+          if (text.includes(query)) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+      });
+    }
+
+    const tradeChips = document.querySelectorAll('.trade-chip');
+    tradeChips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        const trade = chip.textContent.trim().toLowerCase();
+        workerCards.forEach(card => {
+          const cardText = card.textContent.toLowerCase();
+          if (cardText.includes(trade)) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+      });
+    });
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_10px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-semibold"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] text-on-surface-variant hover:text-primary transition-colors" data-path="compliance-dashboard" href="#"><span class="material-symbols-outlined text-[22px]">dashboard</span><span class="font-label-sm text-label-sm mt-0.5">Dashboard</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] transition-colors text-primary font-semibold" data-path="workforce-roster" href="#"><span class="material-symbols-outlined text-[22px]">badge</span><span class="font-label-sm text-label-sm mt-0.5">Workers</span></a><a class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] text-on-surface-variant hover:text-primary transition-colors" data-path="training-and-certifications" href="#"><span class="material-symbols-outlined text-[22px]">verified</span><span class="font-label-sm text-label-sm mt-0.5">Certs</span></a><a class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] text-on-surface-variant hover:text-primary transition-colors" data-path="safety-inspections" href="#"><span class="material-symbols-outlined text-[22px]">fact_check</span><span class="font-label-sm text-label-sm mt-0.5">Audits</span></a><a class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] text-on-surface-variant hover:text-primary transition-colors" data-path="compliance-reports" href="#"><span class="material-symbols-outlined text-[22px]">summarize</span><span class="font-label-sm text-label-sm mt-0.5">Reports</span></a></div></nav></body></html>

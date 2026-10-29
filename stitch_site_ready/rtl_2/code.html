@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;font-family:'IBM Plex Sans Arabic',sans-serif;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "primary-fixed-dim": "#aec9ed",
+          "on-tertiary": "#ffffff",
+          "secondary-fixed": "#90f4e8",
+          "on-tertiary-container": "#c68e1d",
+          "inverse-surface": "#213145",
+          "on-background": "#0b1c30",
+          "on-surface": "#0b1c30",
+          "background": "#f8f9ff",
+          "secondary-container": "#90f4e8",
+          "primary": "#001d37",
+          "on-secondary-fixed-variant": "#00504a",
+          "tertiary-fixed": "#ffdeab",
+          "on-primary-fixed": "#001d37",
+          "surface": "#f8f9ff",
+          "surface-container-low": "#eff4ff",
+          "surface-dim": "#cbdbf5",
+          "secondary-fixed-dim": "#73d7cb",
+          "secondary": "#006a62",
+          "inverse-primary": "#aec9ed",
+          "tertiary": "#281900",
+          "error": "#ba1a1a",
+          "error-container": "#ffdad6",
+          "on-primary-fixed-variant": "#2e4867",
+          "surface-container-high": "#dce9ff",
+          "tertiary-fixed-dim": "#fabc4a",
+          "on-primary": "#ffffff",
+          "outline": "#74777e",
+          "on-secondary-fixed": "#00201d",
+          "surface-container-lowest": "#ffffff",
+          "tertiary-container": "#422c00",
+          "surface-container": "#e5eeff",
+          "on-tertiary-fixed": "#271900",
+          "surface-tint": "#466080",
+          "surface-container-highest": "#d3e4fe",
+          "outline-variant": "#c3c6ce",
+          "on-error-container": "#93000a",
+          "on-tertiary-fixed-variant": "#5f4100",
+          "on-secondary-container": "#007168",
+          "on-primary-container": "#809abd",
+          "on-surface-variant": "#43474d",
+          "inverse-on-surface": "#eaf1ff",
+          "primary-container": "#16324f",
+          "on-secondary": "#ffffff",
+          "on-error": "#ffffff",
+          "surface-bright": "#f8f9ff",
+          "surface-variant": "#d3e4fe",
+          "primary-fixed": "#d2e4ff"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "margin-mobile": "1rem",
+          "space-xl": "2rem",
+          "margin": "2rem",
+          "gutter": "1.5rem",
+          "space-lg": "1.5rem",
+          "space-2xl": "3rem",
+          "gutter-mobile": "0.75rem",
+          "space-md": "1rem",
+          "space-sm": "0.5rem",
+          "space-xs": "0.25rem"
+        },
+        "fontFamily": {
+          "headline-xl": [
+            "Inter"
+          ],
+          "body-lg": [
+            "Inter"
+          ],
+          "body-sm": [
+            "Inter"
+          ],
+          "headline-sm": [
+            "Inter"
+          ],
+          "label-lg": [
+            "Inter"
+          ],
+          "label-md": [
+            "Inter"
+          ],
+          "headline-xl-mobile": [
+            "Inter"
+          ],
+          "body-md": [
+            "Inter"
+          ],
+          "headline-md": [
+            "Inter"
+          ],
+          "data-mono": [
+            "Inter"
+          ],
+          "headline-lg": [
+            "Inter"
+          ],
+          "label-sm": [
+            "Inter"
+          ]
+        },
+        "fontSize": {
+          "headline-xl": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "fontWeight": "700"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-sm": [
+            "18px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "600"
+            }
+          ],
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-xl-mobile": [
+            "26px",
+            {
+              "lineHeight": "34px",
+              "fontWeight": "700"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-md": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "600"
+            }
+          ],
+          "data-mono": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-lg": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "fontWeight": "600"
+            }
+          ],
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "fontWeight": "500"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed right-0 top-0 h-full w-64 bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between pt-space-lg pb-space-lg"><div class="flex flex-col gap-space-md"><div class="px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-xs"><div class="w-9 h-9 rounded-xl bg-primary-container text-secondary-fixed flex items-center justify-center"><span class="material-symbols-outlined text-[22px]">verified_user</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">سايت ريدي</span><span class="font-label-sm text-label-sm text-on-surface-variant">منظومة الامتثال GCC</span></div></div></div><div class="px-space-lg"><div class="px-space-sm py-space-xs rounded-xl bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface truncate">بوابة التحقق الميداني النشطة</span></div></div><nav class="flex flex-col gap-space-xs px-space-md mt-space-sm" data-active-classes="bg-primary-container text-on-primary-container font-label-lg rounded-xl"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span>لوحة التحكم</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm transition-colors bg-primary-container text-on-primary-container font-label-lg rounded-xl" data-path="employees" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span>سجل الموظفين</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="certificates" href="#"><span class="material-symbols-outlined text-[20px]">workspace_premium</span><span>الشهادات والتدريب</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="inspections" href="#"><span class="material-symbols-outlined text-[20px]">fact_check</span><span>التفتيش الميداني</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="reports" href="#"><span class="material-symbols-outlined text-[20px]">query_stats</span><span>التقارير والامتثال</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="team-and-permissions" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span>فريق العمل والصلاحيات</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span>الإعدادات والاشتراك</span></a></nav></div><div class="px-space-md"><div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant">حالة التدقيق</span><span class="font-data-mono text-data-mono text-secondary font-bold">98.4%</span></div><div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden"><div class="bg-secondary h-1.5 rounded-full" style="width: 98.4%"></div></div><span class="font-label-sm text-label-sm text-on-surface-variant">الموقع: نيوم - القطاع الشمالي</span></div></div></aside><div class="pr-64"><header class="fixed top-0 right-64 left-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-md py-space-xs rounded-xl bg-surface-container-low"><span class="material-symbols-outlined text-secondary text-[20px]">domain</span><span class="font-label-lg text-label-lg text-on-surface">شركة الفنار للمقاولات</span><span class="material-symbols-outlined text-on-surface-variant text-[18px]">expand_more</span></div><div class="relative flex items-center"><span class="material-symbols-outlined absolute right-3 text-on-surface-variant text-[20px]">search</span><input class="w-80 h-10 pr-10 pl-space-md rounded-xl bg-surface-container-lowest text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:outline-none shadow-[0_1px_8px_rgba(0,0,0,0.04)]" placeholder="بحث برقم الإقامة، السجل، أو تصريح البوابة..." type="search"/></div></div><div class="flex items-center gap-space-md"><div class="flex items-center rounded-xl bg-surface-container-low p-0.5"><button class="px-space-sm py-0.5 rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm" type="button">عربي</button><button class="px-space-sm py-0.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" type="button">EN</button></div><button class="relative p-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-xl transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 left-1.5 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface text-right">م. طارق العتيبي</span><span class="font-label-sm text-label-sm text-on-surface-variant text-right">مدير السلامة والصحة المهنية</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface px-space-lg"><div class="flex flex-col w-full pb-space-2xl">
+<!-- Breadcrumb Navigation & Top Metadata -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm mb-space-md">
+<div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant">
+<span class="hover:text-primary cursor-pointer transition-colors">العمليات الميدانية</span>
+<span class="material-symbols-outlined text-[16px] text-outline">chevron_left</span>
+<span class="text-primary font-semibold">سجل امتثال القوى العاملة</span>
+<span class="mx-space-xs inline-block w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-data-mono text-data-mono text-secondary bg-surface-container-high px-space-xs py-0.5 rounded-md">GCC-SYNC-LIVE</span>
+</div>
+<div class="flex items-center gap-space-sm self-start md:self-auto font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-1.5 bg-surface-container-low px-space-sm py-1 rounded-xl">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span>الربط الحكومي: منصة قوى ومُقيم مفعّل لحظياً</span>
+</div>
+</div>
+</div>
+<!-- Main View Header & Primary Actions Toolbar -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md mb-space-lg">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-sm flex-wrap">
+<h1 class="font-headline-xl text-headline-xl text-primary font-bold tracking-tight">سجل العمالة الميدانية</h1>
+<div class="flex items-center gap-1.5 bg-surface-container px-space-sm py-0.5 rounded-xl font-label-md text-label-md text-primary font-semibold">
+<span class="font-data-mono text-data-mono">152</span>
+<span>سجلاً نشطاً ومسجلاً</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">إدارة ومراقبة التراخيص المهنية، صلاحية بطاقات الهوية، وسلامة الدخول عبر البوابات الذكية لمواقع المقاولات.</p>
+</div>
+<!-- Quick Action Toolbelt -->
+<div class="flex items-center gap-space-sm flex-wrap">
+<button class="flex items-center gap-space-xs h-10 px-space-md rounded-xl bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm hover:bg-surface-container-low transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">upload_file</span>
+<span>استيراد عبر ملف CSV</span>
+</button>
+<div class="relative group">
+<button class="flex items-center gap-space-xs h-10 px-space-md rounded-xl bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm hover:bg-surface-container-low transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">ios_share</span>
+<span>تصدير كشف العمالة (PDF/Excel)</span>
+<span class="material-symbols-outlined text-[16px] text-outline">expand_more</span>
+</button>
+</div>
+<button class="flex items-center gap-space-xs h-10 px-space-md rounded-xl bg-primary text-on-primary font-label-md text-label-md shadow-sm hover:bg-primary-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">person_add</span>
+<span>+ إضافة موظف جديد</span>
+</button>
+</div>
+</div>
+<!-- KPI Summary Cards (Bento Metric Layout) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md mb-space-lg">
+<!-- Card 1: Total Workers -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md text-on-surface-variant">إجمالي القوى العاملة المسجلة</span>
+<div class="w-9 h-9 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</div>
+</div>
+<div class="flex items-baseline justify-between">
+<span class="font-headline-xl text-headline-xl font-bold font-data-mono text-primary">152</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-lg bg-surface-container-high text-primary font-bold">100% مُدقق حكومياً</span>
+</div>
+<div class="mt-space-sm w-full bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 100%"></div>
+</div>
+</div>
+<!-- Card 2: Ready for Gate Entry -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md text-secondary">جاهز لدخول الموقع والميدان</span>
+<div class="w-9 h-9 rounded-xl bg-secondary-container/40 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+<div class="flex items-baseline justify-between">
+<span class="font-headline-xl text-headline-xl font-bold font-data-mono text-secondary">139</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-lg bg-secondary-container/50 text-on-secondary-container font-bold">91.4% نسبة الجاهزية</span>
+</div>
+<div class="mt-space-sm w-full bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 91.4%"></div>
+</div>
+</div>
+<!-- Card 3: Expiring in 30 Days -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md text-on-tertiary-container">ينتهي خلال 30 يوماً</span>
+<div class="w-9 h-9 rounded-xl bg-tertiary-fixed/60 flex items-center justify-center text-on-tertiary-container">
+<span class="material-symbols-outlined text-[20px]">notification_important</span>
+</div>
+</div>
+<div class="flex items-baseline justify-between">
+<span class="font-headline-xl text-headline-xl font-bold font-data-mono text-on-tertiary-container">10</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed font-bold">فترة سماح وتجديد</span>
+</div>
+<div class="mt-space-sm w-full bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-on-tertiary-container h-full rounded-full" style="width: 6.5%"></div>
+</div>
+</div>
+<!-- Card 4: Barred / Suspended -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md text-error">موقوف / محظور في البوابة</span>
+<div class="w-9 h-9 rounded-xl bg-error-container/60 flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[20px]">no_accounts</span>
+</div>
+</div>
+<div class="flex items-baseline justify-between">
+<span class="font-headline-xl text-headline-xl font-bold font-data-mono text-error">3</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-lg bg-error-container text-on-error-container font-bold">حظر إلكتروني صارم</span>
+</div>
+<div class="mt-space-sm w-full bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-error h-full rounded-full" style="width: 2.1%"></div>
+</div>
+</div>
+</div>
+<!-- Advanced Mirrored Filtering & Search Controls -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm mb-space-md flex flex-col gap-space-sm">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-sm">
+<!-- Search Input with right-aligned icon (RTL start) -->
+<div class="md:col-span-4 relative flex items-center">
+<span class="material-symbols-outlined absolute right-3 text-outline text-[20px]">search</span>
+<input class="w-full h-10 pr-10 pl-space-md rounded-xl bg-surface-container-low text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary transition-all" placeholder="ابحث بالاسم، رقم الإقامة أو الهوية، المهنة..." type="text"/>
+</div>
+<!-- Site Select Dropdown -->
+<div class="md:col-span-2 relative">
+<select class="w-full h-10 pr-space-md pl-8 rounded-xl bg-surface-container-low text-on-surface font-label-md text-label-md appearance-none focus:outline-none focus:bg-surface-container-lowest cursor-pointer">
+<option value="">كل المواقع (نيوم، مترو الرياض)</option>
+<option value="neom-n">نيوم - القطاع الشمالي</option>
+<option value="neom-s4">نيوم - القطاع 4 (الإنشاءات)</option>
+<option value="riyadh-metro">مترو الرياض - المحطة الرئيسية</option>
+<option value="red-sea">مشروع البحر الأحمر - الوجهة السياحية</option>
+</select>
+<span class="material-symbols-outlined absolute left-2.5 top-2.5 text-on-surface-variant pointer-events-none text-[18px]">arrow_drop_down</span>
+</div>
+<!-- Subcontractor Select Dropdown -->
+<div class="md:col-span-2 relative">
+<select class="w-full h-10 pr-space-md pl-8 rounded-xl bg-surface-container-low text-on-surface font-label-md text-label-md appearance-none focus:outline-none focus:bg-surface-container-lowest cursor-pointer">
+<option value="">كل مقاولي الباطن</option>
+<option value="alfanar">شركة الفنار للمقاولات</option>
+<option value="gulf-mech">الخليج للميكانيك والهندسة</option>
+<option value="modern-scaff">السقالات الحديثة المحدودة</option>
+<option value="arabian-cranes">الرافعات العربية الثقيلة</option>
+</select>
+<span class="material-symbols-outlined absolute left-2.5 top-2.5 text-on-surface-variant pointer-events-none text-[18px]">arrow_drop_down</span>
+</div>
+<!-- Trades and Specialization Select Dropdown -->
+<div class="md:col-span-2 relative">
+<select class="w-full h-10 pr-space-md pl-8 rounded-xl bg-surface-container-low text-on-surface font-label-md text-label-md appearance-none focus:outline-none focus:bg-surface-container-lowest cursor-pointer">
+<option value="">كل المهن والتخصصات</option>
+<option value="crane-op">مشغل رافعة برجية</option>
+<option value="rigging">أخصائي رفع وتصبين (Rigger 1)</option>
+<option value="scaffold">فني سقالات معتمد</option>
+<option value="high-v">أخصائي جهد عالي (SEC)</option>
+<option value="safety-off">مراقب سلامة وصحة مهنية</option>
+</select>
+<span class="material-symbols-outlined absolute left-2.5 top-2.5 text-on-surface-variant pointer-events-none text-[18px]">arrow_drop_down</span>
+</div>
+<!-- Compliance Status Filter -->
+<div class="md:col-span-2 relative">
+<select class="w-full h-10 pr-space-md pl-8 rounded-xl bg-surface-container-low text-on-surface font-label-md text-label-md appearance-none focus:outline-none focus:bg-surface-container-lowest cursor-pointer">
+<option value="">حالة الامتثال (الكل)</option>
+<option value="compliant">مطابق كلياً (5/5)</option>
+<option value="expiring">وشيك الانتهاء (أقل من 30 يوماً)</option>
+<option value="barred">محظور / غير مطابق</option>
+<option value="under-audit">قيد التدقيق والمراجعة</option>
+</select>
+<span class="material-symbols-outlined absolute left-2.5 top-2.5 text-on-surface-variant pointer-events-none text-[18px]">arrow_drop_down</span>
+</div>
+</div>
+<!-- Active Filters Micro-tags & Direct Batch Selector Bar -->
+<div class="flex items-center justify-between flex-wrap gap-space-xs pt-space-xs">
+<div class="flex items-center gap-space-xs flex-wrap font-label-sm text-label-sm">
+<span class="text-on-surface-variant">الفرز النشط:</span>
+<span class="bg-surface-container-high text-primary px-2 py-0.5 rounded-lg flex items-center gap-1 font-medium">
+          الموقع: جميع المواقع
+          <span class="material-symbols-outlined text-[14px] cursor-pointer hover:text-error">close</span>
+</span>
+<span class="bg-surface-container-high text-primary px-2 py-0.5 rounded-lg flex items-center gap-1 font-medium">
+          الحالة: كافة الفئات
+          <span class="material-symbols-outlined text-[14px] cursor-pointer hover:text-error">close</span>
+</span>
+<button class="text-primary hover:underline pr-space-xs font-semibold" type="button">إعادة ضبط الكل</button>
+</div>
+<div class="flex items-center gap-space-sm font-label-sm text-label-sm text-on-surface-variant">
+<span>تم تحديد <strong class="font-data-mono text-primary text-data-mono">0</strong> من <strong class="font-data-mono text-primary text-data-mono">152</strong></span>
+<button class="opacity-50 cursor-not-allowed bg-surface-container-low px-space-sm py-1 rounded-xl text-on-surface-variant flex items-center gap-1" disabled="" type="button">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+          إجراء جماعي
+        </button>
+</div>
+</div>
+</div>
+<!-- Comprehensive RTL Data Table -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="overflow-x-auto w-full">
+<table class="w-full text-right border-collapse min-w-[1100px]">
+<thead>
+<tr class="bg-surface-container-low font-label-md text-label-md text-on-surface-variant">
+<!-- Col 1: Select Checkbox -->
+<th class="py-space-md pr-space-md pl-space-xs w-12 text-center">
+<input class="w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer accent-primary" type="checkbox"/>
+</th>
+<!-- Col 2: Worker Identity & Iqama -->
+<th class="py-space-md px-space-md text-right">بيانات الموظف ورقم الإقامة</th>
+<!-- Col 3: Role & Trade Specialization -->
+<th class="py-space-md px-space-md text-right">المسمى المهني والتخصص</th>
+<!-- Col 4: Project Site & Subcontractor -->
+<th class="py-space-md px-space-md text-right">الموقع ومقاول الباطن</th>
+<!-- Col 5: Compliance Status & Validity -->
+<th class="py-space-md px-space-md text-right">حالة الامتثال والتراخيص</th>
+<!-- Col 6: HSE Certifications -->
+<th class="py-space-md px-space-md text-right">اعتمادات السلامة والصحة (HSE)</th>
+<!-- Col 7: Gate Turnstile Clearance -->
+<th class="py-space-md px-space-md text-right">تصريح بوابات العبور</th>
+<!-- Col 8: Contextual Actions -->
+<th class="py-space-md pl-space-md pr-space-sm text-left">إجراءات سريعة</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 font-body-md text-body-md text-on-surface">
+<!-- Row 1: Saudi High Voltage Specialist (Fully Compliant) -->
+<tr class="hover:bg-surface-container-low/70 transition-colors">
+<td class="py-space-md pr-space-md pl-space-xs text-center">
+<input class="w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer accent-primary" type="checkbox"/>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl overflow-hidden bg-surface-container-high shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait of a professional Saudi electrical engineer in safety helmet and high-visibility vest at an industrial construction project in Neom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8ODuhUj7T0JqybcIsSRO7uZrVCtop2mYHEDka6yBXrV6bpfSzJJAEveL0-L2Jq0RXX7dKjHMdtsr6jF-M7dF-fomDpuwQ4wyHnio34A2qCQ_qjnjrjXZj8XhQc19TQREV0LNmfzv2T9KCB3FbM8c5FcgiTbgVaWz8IuM9zriT9vVNfSYCsFEevc5fYgQJXlJ93v0wv-ESXM1LupBKM_jHKPvnk_CjkI4-5lfbKdiG"/>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">فهد بن ناصر القحطاني</span>
+<span class="font-label-sm text-label-sm bg-surface-container px-1.5 py-0.2 rounded text-on-surface-variant font-medium">سعودي</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-data-mono text-data-mono">
+<span class="font-body-sm text-body-sm font-sans">هوية:</span>
+<span class="text-left font-semibold text-primary" dir="ltr">1089345210</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-semibold text-primary">أخصائي جهد عالي ومحطات</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">الجهد الفائق 380kV • خبرة 8 سنوات</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-medium text-on-surface">نيوم - القطاع 4 (محطة التحويل)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">شركة الفنار للمقاولات</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col items-start gap-1">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>مطابق 5/5 مكتمل</span>
+</div>
+<div class="font-data-mono text-data-mono text-on-surface-variant flex items-center gap-1">
+<span>صلاحية الهوية:</span>
+<span class="text-left font-medium" dir="ltr">2026-08-14</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-wrap gap-1 max-w-xs">
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high font-data-mono text-data-mono text-primary font-bold">SEC HV-380</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container font-data-mono text-data-mono text-on-surface-variant">NEBOSH IGC</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container font-data-mono text-data-mono text-on-surface-variant">OSHA 30</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-xl bg-secondary-container/30 text-secondary font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[18px]">sensor_door</span>
+<span>مصرح On-Site</span>
+</div>
+</td>
+<td class="py-space-md pl-space-md pr-space-sm text-left">
+<div class="flex items-center justify-end gap-1">
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-primary transition-colors" title="عرض الملف الكامل" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant transition-colors" title="رفع وثيقة إضافية" type="button">
+<span class="material-symbols-outlined text-[18px]">upload</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant transition-colors" title="خيارات إضافية" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Crane Operator (Expiring Soon - 5 Days) -->
+<tr class="hover:bg-surface-container-low/70 transition-colors bg-tertiary-fixed/10">
+<td class="py-space-md pr-space-md pl-space-xs text-center">
+<input class="w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer accent-primary" type="checkbox"/>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl overflow-hidden bg-surface-container-high shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait of an experienced heavy machinery crane operator wearing hard hat and reflective safety glasses outdoors in hot desert sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGJxGsOVz5cD8yHq2_WNwlwDUcDcor7iOgcLSfeUgrBCZTw8giyryCihZl0-fqKX584ERqYag8cYU0Q9OOYZrsv8nTJSL8h3kfvvl7oXVhnZDtzfkPI2y7-bp9_yTcrQWVhFDQuYZsajeYuyJhrd5RI_xlvN81UXGABArK92DHRAy6ZqeFRJSAvNFoSoP6X0y_rAo9gno_xN0mmKAGO9fjVoa8N2gnpdFKzUdMNqUX"/>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">محمد إقبال رحمان</span>
+<span class="font-label-sm text-label-sm bg-surface-container px-1.5 py-0.2 rounded text-on-surface-variant font-medium">باكستاني</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-data-mono text-data-mono">
+<span class="font-body-sm text-body-sm font-sans">إقامة:</span>
+<span class="text-left font-semibold text-primary" dir="ltr">2439180765</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-semibold text-primary">مشغل رافعة برجية ثقيلة</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">رافعات عملاقة Liebherr 280 EC-H</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-medium text-on-surface">مترو الرياض - المحطة العليا 2</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">الرافعات العربية الثقيلة</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col items-start gap-1">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-container font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container"></span>
+<span>فحص طبي ينتهي خلال 5 أيام</span>
+</div>
+<div class="font-data-mono text-data-mono text-on-tertiary-container flex items-center gap-1 font-semibold">
+<span>المتبقي:</span>
+<span class="text-left" dir="ltr">5 أيام (تنبيه)</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-wrap gap-1 max-w-xs">
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high font-data-mono text-data-mono text-primary font-bold">TÜV Class 1</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container font-data-mono text-data-mono text-on-surface-variant">Aramco OSP-Heavy</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-xl bg-tertiary-fixed/40 text-on-tertiary-container font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[18px]">hourglass_top</span>
+<span>تصريح مؤقت سارٍ</span>
+</div>
+</td>
+<td class="py-space-md pl-space-md pr-space-sm text-left">
+<div class="flex items-center justify-end gap-1">
+<button class="px-2.5 py-1.5 rounded-lg bg-on-tertiary-container text-on-tertiary font-label-sm text-label-sm font-bold hover:bg-tertiary-container transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+                  تجديد فوري
+                </button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Scaffolding Technician (Gate Barred - Expired Residency) -->
+<tr class="hover:bg-surface-container-low/70 transition-colors bg-error-container/10">
+<td class="py-space-md pr-space-md pl-space-xs text-center">
+<input class="w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer accent-primary" type="checkbox"/>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl overflow-hidden bg-surface-container-high shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Portrait of an Indian construction rigger in steel plant wearing protective gear and safety harness" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBb90WaYBmicTA6y83Er1Qcyk4Sj0jNz3XMlk22mamiZp2f3l7AbhDuj_TGJaeWj_P_TUwKES0Rx4hIjGEI2oLihTGRwVOGPmjFUxWMl12wWTm83G61ntaULfnGrgOMCtDFx7qp0VOz7h_AHM-417YEbjk0b7e8rxTVFCV8_ypNgj9mfDUq2OrlJKgJ8QqZSoUCXjLxBsC5sJn65uTvsV3_z90xxioxIK_GQ0GBLjby"/>
+<div class="absolute inset-0 bg-error/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-[16px]">block</span>
+</div>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">راجيش كومار باتيل</span>
+<span class="font-label-sm text-label-sm bg-surface-container px-1.5 py-0.2 rounded text-on-surface-variant font-medium">هندي</span>
+</div>
+<div class="flex items-center gap-space-xs text-error font-data-mono text-data-mono font-semibold">
+<span class="font-body-sm text-body-sm font-sans">إقامة:</span>
+<span class="text-left" dir="ltr">2310948572</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-semibold text-primary">فني سقالات معتمد (مستوى 3)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">تركيب وفحص هياكل السقالات المعلقة</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-medium text-on-surface">نيوم - القطاع الشمالي (البنية)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">السقالات الحديثة المحدودة</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col items-start gap-1">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+<span>إجراء مطلوب: إقامة منتهية</span>
+</div>
+<div class="font-data-mono text-data-mono text-error flex items-center gap-1 font-bold">
+<span>انتهت منذ:</span>
+<span class="text-left" dir="ltr">12 يوماً</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-wrap gap-1 max-w-xs">
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high font-data-mono text-data-mono text-primary font-bold">CISRS Scaffolder</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container font-data-mono text-data-mono text-on-surface-variant">Working at Height</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-xl bg-error text-on-error font-label-md text-label-md font-bold shadow-sm">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+<span>محظور عند البوابة</span>
+</div>
+</td>
+<td class="py-space-md pl-space-md pr-space-sm text-left">
+<div class="flex items-center justify-end gap-1">
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-sm text-label-sm font-bold transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">upload_file</span>
+                  رفع إقامة جديدة
+                </button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Rigging Specialist (Compliant) -->
+<tr class="hover:bg-surface-container-low/70 transition-colors">
+<td class="py-space-md pr-space-md pl-space-xs text-center">
+<input class="w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer accent-primary" type="checkbox"/>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl overflow-hidden bg-surface-container-high shrink-0">
+<img class="w-full h-full object-cover" data-alt="Egyptian construction supervisor holding a digital tablet wearing standard safety hard hat on a modern construction project" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHJdwHodrHYyW1oH8hxgorqVOQOyjuws3l5F290FltmpejyBZmISIEIWzBnEEjOmUz7ZDP78kH_1p1WlTmPGQm_Fa2rj3u2BydqC2ndIEvNDZZf8yp8gKy2icXz0WSSrq2PFRPfp9eW4H4AvrD1zSdPVRuGhXIPKQCjuyYBgYM3GhkzVO00A6W0Qlwk_LfiJgbCB4bFs-5cXRWfKKZkE97saZ4Qyd6cl2feiFZCSid"/>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">أحمد محمود الشربيني</span>
+<span class="font-label-sm text-label-sm bg-surface-container px-1.5 py-0.2 rounded text-on-surface-variant font-medium">مصري</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-data-mono text-data-mono">
+<span class="font-body-sm text-body-sm font-sans">إقامة:</span>
+<span class="text-left font-semibold text-primary" dir="ltr">2198473620</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-semibold text-primary">أخصائي رفع وتصبين (Rigger-1)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">عمليات الأحمال الحساسة والحرجة</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-medium text-on-surface">مشروع البحر الأحمر - الوجهة</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">الخليج للميكانيك والهندسة</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col items-start gap-1">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>مطابق 5/5 مكتمل</span>
+</div>
+<div class="font-data-mono text-data-mono text-on-surface-variant flex items-center gap-1">
+<span>صلاحية الهوية:</span>
+<span class="text-left font-medium" dir="ltr">2025-11-20</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-wrap gap-1 max-w-xs">
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high font-data-mono text-data-mono text-primary font-bold">Aramco Rigger-I</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container font-data-mono text-data-mono text-on-surface-variant">LEEA Certified</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container font-data-mono text-data-mono text-on-surface-variant">First Aid</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-xl bg-secondary-container/30 text-secondary font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[18px]">sensor_door</span>
+<span>مصرح On-Site</span>
+</div>
+</td>
+<td class="py-space-md pl-space-md pr-space-sm text-left">
+<div class="flex items-center justify-end gap-1">
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-primary transition-colors" title="عرض الملف الكامل" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant transition-colors" title="رفع وثيقة إضافية" type="button">
+<span class="material-symbols-outlined text-[18px]">upload</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant transition-colors" title="خيارات إضافية" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: Safety Officer (Compliant) -->
+<tr class="hover:bg-surface-container-low/70 transition-colors">
+<td class="py-space-md pr-space-md pl-space-xs text-center">
+<input class="w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer accent-primary" type="checkbox"/>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl overflow-hidden bg-surface-container-high shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait of a focused Saudi occupational health and safety officer with hard hat and safety credentials badge clipped to vest at NEOM site" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3dg3u7iG069aYgJzc7kVuEh2XumVMOemnRcUUe-CKMujpcSIffuXkGa6sOniNCx792aVedpXilbJ5mWe3Tfh8R5xpZNPEhxCp98G6ZF2VNbrNivpNZTSl8zeds99yNvnIhor5-ufqepsELRLeE64RwOfjqjg19g0tbtilaqu4NbIHBepiFqNLXfOb_4VIDS7Ylvo9a1_bSd71FEWh0N0TldTtKGXohR8jpESTGe6s"/>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">سلطان عبد العزيز الدوسري</span>
+<span class="font-label-sm text-label-sm bg-surface-container px-1.5 py-0.2 rounded text-on-surface-variant font-medium">سعودي</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-data-mono text-data-mono">
+<span class="font-body-sm text-body-sm font-sans">هوية:</span>
+<span class="text-left font-semibold text-primary" dir="ltr">1054928173</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-semibold text-primary">مراقب سلامة وصحة مهنية ميداني</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">تدقيق تصاريح العمل الساخن وتصاريح الحفر</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-medium text-on-surface">نيوم - القطاع 4</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">شركة الفنار للمقاولات</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col items-start gap-1">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>مطابق 5/5 مكتمل</span>
+</div>
+<div class="font-data-mono text-data-mono text-on-surface-variant flex items-center gap-1">
+<span>صلاحية الهوية:</span>
+<span class="text-left font-medium" dir="ltr">2027-03-01</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-wrap gap-1 max-w-xs">
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high font-data-mono text-data-mono text-primary font-bold">NEBOSH Dip</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container font-data-mono text-data-mono text-on-surface-variant">IOSH Managing</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container font-data-mono text-data-mono text-on-surface-variant">OSHA 510</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-xl bg-secondary-container/30 text-secondary font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[18px]">sensor_door</span>
+<span>مصرح On-Site (24/7)</span>
+</div>
+</td>
+<td class="py-space-md pl-space-md pr-space-sm text-left">
+<div class="flex items-center justify-end gap-1">
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-primary transition-colors" title="عرض الملف الكامل" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant transition-colors" title="رفع وثيقة إضافية" type="button">
+<span class="material-symbols-outlined text-[18px]">upload</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant transition-colors" title="خيارات إضافية" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Mirrored Pagination and Batch Navigation Footer -->
+<div class="bg-surface-container-low px-space-lg py-space-md flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<!-- Records Count (RTL Start) -->
+<div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant">
+<span>عرض</span>
+<span class="font-data-mono text-primary font-bold">1 - 10</span>
+<span>من أصل</span>
+<span class="font-data-mono text-primary font-bold">152</span>
+<span>موظف ميداني مسجل</span>
+</div>
+<!-- Mirrored Pagination Controller -->
+<div class="flex items-center gap-1 font-label-md text-label-md">
+<!-- Previous (Points Right in RTL) -->
+<button class="opacity-50 cursor-not-allowed flex items-center gap-1 h-9 px-space-sm rounded-xl bg-surface-container-lowest text-on-surface-variant" disabled="" type="button">
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+<span>السابق</span>
+</button>
+<!-- Page Numbers -->
+<button class="w-9 h-9 rounded-xl bg-primary text-on-primary font-bold font-data-mono flex items-center justify-center shadow-sm" type="button">1</button>
+<button class="w-9 h-9 rounded-xl bg-surface-container-lowest hover:bg-surface-container text-on-surface font-semibold font-data-mono flex items-center justify-center transition-colors" type="button">2</button>
+<button class="w-9 h-9 rounded-xl bg-surface-container-lowest hover:bg-surface-container text-on-surface font-semibold font-data-mono flex items-center justify-center transition-colors" type="button">3</button>
+<span class="px-1 text-on-surface-variant font-data-mono">...</span>
+<button class="w-9 h-9 rounded-xl bg-surface-container-lowest hover:bg-surface-container text-on-surface font-semibold font-data-mono flex items-center justify-center transition-colors" type="button">16</button>
+<!-- Next (Points Left in RTL) -->
+<button class="flex items-center gap-1 h-9 px-space-sm rounded-xl bg-surface-container-lowest hover:bg-surface-container text-primary font-semibold transition-colors" type="button">
+<span>التالي</span>
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+</button>
+</div>
+<!-- Jump to Page / Rows per page selector -->
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span>الصفوف في الصفحة:</span>
+<select class="h-8 px-2 rounded-lg bg-surface-container-lowest text-on-surface font-data-mono border-0 focus:outline-none cursor-pointer">
+<option value="10">10</option>
+<option value="25">25</option>
+<option value="50">50</option>
+<option value="100">100</option>
+</select>
+</div>
+</div>
+</div>
+<!-- Real-time Regulatory Gateway Status Widget (Bottom Banner) -->
+<div class="mt-space-lg bg-surface-container-low rounded-xl p-space-md flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest text-secondary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[28px]">cloud_sync</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-primary font-semibold">بوابة المزامنة الذكية مع الأنظمة السعودية والخليجية</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">متصل</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">يتم التحقق آلياً من سريان رخص العمل، التأمين الصحي المعتمد (CCHI)، واختبارات السلامة المهنية بالتكامل المباشر مع منصة بلدي ووزارة الموارد البشرية.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<div class="text-left font-data-mono text-data-mono text-on-surface-variant">
+<div>آخر مزامنة: منذ دقيقتين</div>
+<div class="text-secondary font-semibold">استجابة الخادم: 94ms</div>
+</div>
+<button class="h-10 px-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container text-primary font-label-md text-label-md shadow-sm transition-colors flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">refresh</span>
+<span>تحديث السجلات الآن</span>
+</button>
+</div>
+</div>
+</div></main></div></body></html>

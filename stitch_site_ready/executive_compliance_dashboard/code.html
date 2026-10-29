@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"inverse-primary":"#aec9ed","outline-variant":"#c3c6ce","surface-bright":"#f8f9ff","tertiary-container":"#422c00","primary-fixed":"#d2e4ff","on-surface-variant":"#43474d","on-tertiary-fixed-variant":"#5f4100","surface-tint":"#466080","surface-container-highest":"#d3e4fe","on-surface":"#0b1c30","secondary-container":"#90f4e8","surface":"#f8f9ff","background":"#f8f9ff","primary-container":"#16324f","secondary-fixed":"#90f4e8","on-primary-container":"#809abd","secondary-fixed-dim":"#73d7cb","on-background":"#0b1c30","tertiary-fixed-dim":"#fabc4a","surface-container":"#e5eeff","tertiary-fixed":"#ffdeab","on-secondary-container":"#007168","error":"#ba1a1a","surface-container-high":"#dce9ff","on-primary":"#ffffff","on-tertiary-container":"#c68e1d","on-tertiary":"#ffffff","on-secondary-fixed-variant":"#00504a","on-primary-fixed-variant":"#2e4867","error-container":"#ffdad6","on-secondary":"#ffffff","outline":"#74777e","secondary":"#006a62","primary":"#001d37","primary-fixed-dim":"#aec9ed","surface-container-low":"#eff4ff","on-error-container":"#93000a","surface-container-lowest":"#ffffff","on-secondary-fixed":"#00201d","surface-dim":"#cbdbf5","on-error":"#ffffff","tertiary":"#281900","surface-variant":"#d3e4fe","inverse-surface":"#213145","on-tertiary-fixed":"#271900","on-primary-fixed":"#001d37","inverse-on-surface":"#eaf1ff"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin":"2rem","gutter-mobile":"0.75rem","space-md":"1rem","space-xl":"2rem","margin-mobile":"1rem","space-lg":"1.5rem","space-sm":"0.5rem","space-xs":"0.25rem","space-2xl":"3rem","gutter":"1.5rem"},"fontFamily":{"headline-xl-mobile":["Inter"],"headline-lg":["Inter"],"data-mono":["Inter"],"label-sm":["Inter"],"label-md":["Inter"],"headline-md":["Inter"],"headline-xl":["Inter"],"body-sm":["Inter"],"body-md":["Inter"],"headline-sm":["Inter"],"label-lg":["Inter"],"body-lg":["Inter"]},"fontSize":{"headline-xl-mobile":["26px",{"lineHeight":"34px","fontWeight":"700"}],"headline-lg":["24px",{"lineHeight":"32px","fontWeight":"600"}],"data-mono":["13px",{"lineHeight":"18px","fontWeight":"500"}],"label-sm":["11px",{"lineHeight":"14px","fontWeight":"500"}],"label-md":["12px",{"lineHeight":"16px","fontWeight":"600"}],"headline-md":["20px",{"lineHeight":"28px","fontWeight":"600"}],"headline-xl":["32px",{"lineHeight":"40px","fontWeight":"700"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"24px","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen"><aside class="fixed left-0 top-0 h-screen w-64 bg-primary text-on-primary z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.08)]"><div class="flex flex-col flex-1 overflow-y-auto"><div class="h-16 px-space-lg flex items-center justify-between bg-primary-container/40"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded bg-secondary flex items-center justify-center"><span class="material-symbols-outlined text-on-secondary text-[20px]">verified_user</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-on-primary leading-none">SiteReady</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed-dim">GCC Compliance</span></div></div><span class="material-symbols-outlined text-on-primary-container text-[18px]">shield</span></div><div class="px-space-md py-space-sm"><div class="px-space-sm py-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-primary-container">Operational Modules</div></div><nav class="flex flex-col gap-space-xs px-space-sm" data-active-classes="bg-secondary text-on-secondary font-label-lg rounded-xl shadow-sm"><a aria-current="page" class="flex items-center justify-between px-space-md py-2.5 transition-colors group bg-secondary text-on-secondary font-label-lg rounded-xl shadow-sm" data-path="dashboard" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px] transition-transform group-hover:scale-105">space_dashboard</span><span>Dashboard</span></div><span class="px-1.5 py-0.5 rounded text-label-sm font-label-sm bg-error-container text-on-error-container">3</span></a><a class="flex items-center justify-between px-space-md py-2.5 rounded-xl font-body-md text-body-md text-on-primary-container hover:bg-primary-container hover:text-on-primary transition-colors group" data-path="employees" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px] transition-transform group-hover:scale-105">badge</span><span>Employees</span></div><span class="font-data-mono text-data-mono text-on-primary-container">428</span></a><a class="flex items-center justify-between px-space-md py-2.5 rounded-xl font-body-md text-body-md text-on-primary-container hover:bg-primary-container hover:text-on-primary transition-colors group" data-path="certificates-&amp;-training" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px] transition-transform group-hover:scale-105">workspace_premium</span><span>Certificates &amp; Training</span></div><span class="px-1.5 py-0.5 rounded text-label-sm font-label-sm bg-tertiary-fixed text-on-tertiary-fixed">12</span></a><a class="flex items-center justify-between px-space-md py-2.5 rounded-xl font-body-md text-body-md text-on-primary-container hover:bg-primary-container hover:text-on-primary transition-colors group" data-path="inspections" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px] transition-transform group-hover:scale-105">fact_check</span><span>Inspections</span></div></a><a class="flex items-center justify-between px-space-md py-2.5 rounded-xl font-body-md text-body-md text-on-primary-container hover:bg-primary-container hover:text-on-primary transition-colors group" data-path="reports" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px] transition-transform group-hover:scale-105">analytics</span><span>Reports</span></div></a><div class="my-space-xs mx-space-sm h-px bg-primary-container/60"></div><div class="px-space-sm py-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-primary-container">Administration</div><a class="flex items-center justify-between px-space-md py-2.5 rounded-xl font-body-md text-body-md text-on-primary-container hover:bg-primary-container hover:text-on-primary transition-colors group" data-path="team-&amp;-permissions" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px] transition-transform group-hover:scale-105">admin_panel_settings</span><span>Team &amp; Permissions</span></div></a><a class="flex items-center justify-between px-space-md py-2.5 rounded-xl font-body-md text-body-md text-on-primary-container hover:bg-primary-container hover:text-on-primary transition-colors group" data-path="settings-&amp;-subscription" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px] transition-transform group-hover:scale-105">settings_suggest</span><span>Settings &amp; Subscription</span></div></a></nav></div><div class="p-space-md bg-primary-container/30 m-space-sm rounded-xl flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-secondary-fixed-dim uppercase tracking-wider">KSA / UAE Sites</span><span class="w-2 h-2 rounded-full bg-secondary-fixed"></span></div><span class="font-label-md text-label-md text-on-primary">Gate Pass Sync Active</span><span class="font-body-sm text-body-sm text-on-primary-container">Muqeem &amp; Qiwa Live Gateway</span></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container-low px-space-md py-space-xs rounded-xl"><span class="material-symbols-outlined text-[18px] text-secondary">business</span><div class="flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Al-Fanar Contracting</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none">NEOM Spine &amp; Riyadh Metro Package 4</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant ml-space-xs">unfold_more</span></div><div class="hidden lg:flex items-center gap-space-xs bg-surface-container-low px-space-md py-space-xs rounded-xl w-72"><span class="material-symbols-outlined text-[18px] text-on-surface-variant">search</span><span class="font-body-sm text-body-sm text-outline-variant flex-1">Search workers, iqamas...</span><span class="font-data-mono text-label-sm bg-surface-container-lowest px-1.5 py-0.5 rounded text-on-surface-variant shadow-sm">⌘K</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center bg-surface-container-low p-0.5 rounded-lg"><button class="px-2 py-1 rounded font-label-sm text-label-sm bg-primary text-on-primary font-semibold">EN</button><button class="px-2 py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface">العربية</button></div><div class="relative flex items-center justify-center w-10 h-10 rounded-xl bg-surface-container-low hover:bg-surface-container hover:text-on-surface transition-colors cursor-pointer"><span class="material-symbols-outlined text-on-surface-variant text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></div><div class="h-8 w-px bg-surface-container"></div><div class="flex items-center gap-space-sm pl-space-xs cursor-pointer"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden xl:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight">Eng. Tariq Al-Otaibi</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none">HSE Director</span></div><span class="material-symbols-outlined text-[18px] text-on-surface-variant">expand_more</span></div></div></header><main class="w-full pt-16 px-space-lg pb-space-2xl bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Operational Sub-Header / Welcome Context -->
+<section class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md mb-space-lg">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md mb-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span>Civil Defense &amp; Aramco Safety Systems Verified</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span class="font-data-mono text-data-mono text-on-surface-variant">Last Qiwa Sync: 06:42 AST (14m ago)</span>
+</div>
+<div class="flex flex-wrap items-baseline gap-x-space-md gap-y-1">
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Good morning, Eng. Tariq</h1>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+          Al-Fanar Contracting — NEOM Sector 4 &amp; Riyadh Metro Line 3
+        </span>
+</div>
+</div>
+<!-- Quick Action Launch Bar -->
+<div class="flex items-center flex-wrap gap-space-xs">
+<button class="inline-flex items-center gap-1.5 px-space-md h-10 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg shadow-sm hover:bg-primary-container transition-all">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+<span>Add Employee</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-space-md h-10 rounded-xl bg-surface-container-lowest text-on-surface font-label-lg text-label-lg shadow-sm hover:bg-surface-container transition-all">
+<span class="material-symbols-outlined text-[18px] text-secondary">workspace_premium</span>
+<span>Add Certificate</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-space-md h-10 rounded-xl bg-surface-container-lowest text-on-surface font-label-lg text-label-lg shadow-sm hover:bg-surface-container transition-all">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">assignment_add</span>
+<span>Schedule Inspection</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-space-md h-10 rounded-xl bg-surface-container-low text-on-surface-variant font-label-lg text-label-lg shadow-sm hover:bg-surface-container transition-all">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+<span>Export Audit Pack</span>
+</button>
+</div>
+</section>
+<!-- Attention Required / Severe Operational Gate Alert -->
+<section class="relative overflow-hidden mb-space-lg rounded-xl bg-error-container text-on-error-container p-space-md shadow-md">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-error"></div>
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md pl-space-xs">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center text-error flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[24px]">gpp_bad</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="inline-flex px-2 py-0.5 rounded text-label-sm font-label-sm uppercase bg-error text-on-error">Critical HSE Gate Lockout</span>
+<span class="font-data-mono text-label-sm text-error">Site Gate 04 / Turnstile B</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-on-error-container mt-1">
+            3 Personnel Barred from High-Risk Zones: Expired Saudi Aramco Rigging &amp; SEC High Voltage Credentials
+          </p>
+<p class="font-body-sm text-body-sm text-on-error-container/80 mt-0.5">
+            Turnstile badges deactivated automatically at 00:00 AST. Access prevented to NEOM Substation Beta &amp; Package 4 Crane Bays.
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm flex-shrink-0">
+<button class="px-space-md h-9 rounded-lg bg-surface-container-lowest text-error font-label-md text-label-md shadow-sm hover:bg-surface-container-low transition-colors">
+          View Lockout Log
+        </button>
+<button class="inline-flex items-center gap-1.5 px-space-md h-9 rounded-lg bg-error text-on-error font-label-md text-label-md shadow-sm hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined text-[16px]">chevron_forward</span>
+<span>Resolve &amp; Reassign Crew</span>
+</button>
+</div>
+</div>
+</section>
+<!-- KPI Metric Row (4 Responsive Cards) -->
+<section class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md mb-space-xl">
+<!-- Card 1: Active Workforce -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md uppercase text-on-surface-variant tracking-wider">Active Workforce</span>
+<span class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</span>
+</div>
+<div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl text-on-surface leading-none">152</span>
+<span class="font-body-md text-body-md text-on-surface-variant font-medium">/ 156 Badged</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 mt-3 overflow-hidden">
+<div class="bg-secondary h-1.5 rounded-full" style="width: 97.4%"></div>
+</div>
+</div>
+<div class="flex items-center justify-between mt-space-md pt-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="text-secondary font-semibold">97.4% gate clearance</span>
+<span class="font-data-mono">4 Off-duty</span>
+</div>
+</div>
+<!-- Card 2: Expired Certificates -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md uppercase text-on-surface-variant tracking-wider">Expired Certificates</span>
+<span class="w-8 h-8 rounded-lg bg-error-container flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[20px]">block</span>
+</span>
+</div>
+<div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl text-error leading-none">3</span>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-error-container text-on-error-container font-semibold">Stop-Work Active</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+          Automatic turnstile lockout applied across NEOM Gate 4 &amp; Metro Trench.
+        </p>
+</div>
+<div class="flex items-center justify-between mt-space-md pt-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="text-error font-medium">Immediate HSE intervention</span>
+<span class="material-symbols-outlined text-[16px] text-error">arrow_forward</span>
+</div>
+</div>
+<!-- Card 3: Expiring Within 30 Days -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md uppercase text-on-surface-variant tracking-wider">Expiring ≤ 30 Days</span>
+<span class="w-8 h-8 rounded-lg bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[20px]">notification_important</span>
+</span>
+</div>
+<div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl text-on-surface leading-none">18</span>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-tertiary-fixed text-on-tertiary-fixed font-semibold">Queued for Test</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+          Renewal alerts dispatched to sub-contractors via WhatsApp &amp; Qiwa.
+        </p>
+</div>
+<div class="flex items-center justify-between mt-space-md pt-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="text-on-tertiary-container font-medium">11 in Qiwa sync window</span>
+<span class="font-data-mono">T-minus 14d critical</span>
+</div>
+</div>
+<!-- Card 4: Scheduled Inspections -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md uppercase text-on-surface-variant tracking-wider">Today's Inspections</span>
+<span class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">fact_check</span>
+</span>
+</div>
+<div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl text-on-surface leading-none">6</span>
+<span class="font-body-md text-body-md text-on-surface-variant font-medium">Scheduled</span>
+</div>
+<div class="flex items-center gap-1.5 mt-3">
+<span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-label-sm font-label-sm bg-secondary-fixed text-on-secondary-fixed font-semibold">
+<span class="material-symbols-outlined text-[14px]">check</span> 2 Passed
+          </span>
+<span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-label-sm font-label-sm bg-error-container text-on-error-container font-semibold">
+<span class="material-symbols-outlined text-[14px]">error</span> 1 Overdue
+          </span>
+<span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-label-sm font-label-sm bg-surface-container-high text-on-surface font-semibold">
+            3 Pend
+          </span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-space-md pt-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span>Scafftag bay inspections</span>
+<span class="text-secondary font-medium">Next: 11:30 AST</span>
+</div>
+</div>
+</section>
+<!-- Two-Column Master Dashboard Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left / Main Column (8 of 12 columns) -->
+<div class="lg:col-span-8 flex flex-col gap-space-xl">
+<!-- Expiry Warning Register Section -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm mb-space-md">
+<div>
+<div class="flex items-center gap-2">
+<h2 class="font-headline-md text-headline-md text-on-surface">Upcoming Certificate Expiries</h2>
+<span class="px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-error-container text-on-error-container font-semibold">≤ 14 Days Critical</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Workers requiring renewal verification prior to weekly NEOM security audits.
+            </p>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container transition-colors">
+              Filter: All Trades
+            </button>
+<button class="px-space-sm py-1.5 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md shadow-sm hover:opacity-95 transition-opacity">
+              Batch Alert (3)
+            </button>
+</div>
+</div>
+<!-- Table View -->
+<div class="overflow-x-auto -mx-space-lg px-space-lg">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-md text-label-md uppercase tracking-wider">
+<th class="py-2.5 px-3 rounded-l-lg">Personnel / Iqama</th>
+<th class="py-2.5 px-3">Certification</th>
+<th class="py-2.5 px-3">Site Location</th>
+<th class="py-2.5 px-3">Expiry / Countdown</th>
+<th class="py-2.5 px-3 rounded-r-lg text-right">Quick Dispatch</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container/60">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-3">
+<div class="flex items-center gap-space-sm">
+<img class="w-9 h-9 rounded-full object-cover shadow-sm" data-alt="Professional studio portrait photo of a middle-aged Arab construction rigging supervisor wearing a white hardhat and high-visibility vest, neutral clean studio background, high resolution, sharp focus." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0lkvFCCkAzzm2t3o5PR3q9CsbXYousKiL8lOiKTtg1ELyhQYd5yLWs9Rk4JRFUWA_3_MSOxv7VsEJYFR9_0yw33jB0S33nIfs-0fGoFDNPufj3vDxNCVmwNwhgQqwN_f7vZYp8iOoPTlaZflFGspKv9prU1V0J88EnJXhPiIHK7tJeUHF6NXIcWKjq0sIJ0AaJV6NjVRpIKrnnRB9mIdUuvEVnSB1THj-AGIQsO49"/>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Fahad Al-Dawsari</span>
+<span class="font-data-mono text-label-sm text-on-surface-variant">IQAMA 2409881231</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-medium">Saudi Aramco Rigger Level 1</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ID: SAR-8821-B</span>
+</div>
+</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">location_on</span>
+                    NEOM Sector 4
+                  </span>
+</td>
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-label-sm font-label-sm bg-error-container text-on-error-container font-semibold w-fit">
+<span class="material-symbols-outlined text-[14px]">timer</span> Expired (2d ago)
+                    </span>
+<span class="font-data-mono text-label-sm text-on-surface-variant mt-0.5">24 Oct 2024</span>
+</div>
+</td>
+<td class="py-3 px-3 text-right">
+<button class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-container text-on-surface hover:bg-secondary hover:text-on-secondary font-label-sm text-label-sm transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+<span>WhatsApp</span>
+</button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-3">
+<div class="flex items-center gap-space-sm">
+<img class="w-9 h-9 rounded-full object-cover shadow-sm" data-alt="Headshot of a South Asian heavy equipment technician in safety glasses and yellow safety helmet on industrial jobsite background, crisp lighting, high quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAF-4yvXbRQ_lr1gurh1F7cFxvjXtdR-HtnLbG14-rzlrCa4ZTfIBnKEtSTrUf9mQUNWlIw_D10HP90beLtSceyV2T1y2rUgf2CRJLcoMFrI9BoKlP3GhzVEAz8IY3alKZUuHJuYDrPiCz0g0-rkIoxvMgWUR_iQNduBAiYgeAFbDqpxFmIVpPBlBS-Gqzn2cTK5wOJShBjBmf5SVlsryrlKFHEqMM_BRlFI2UacrF6"/>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Bilal Ahmad Khan</span>
+<span class="font-data-mono text-label-sm text-on-surface-variant">IQAMA 2387190042</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-medium">Saudi Heavy Equipment Operator</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">License #KL-99214</span>
+</div>
+</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">location_on</span>
+                    Riyadh Metro Line 3
+                  </span>
+</td>
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-label-sm font-label-sm bg-tertiary-fixed text-on-tertiary-fixed font-semibold w-fit">
+<span class="material-symbols-outlined text-[14px]">warning</span> 4 Days Left
+                    </span>
+<span class="font-data-mono text-label-sm text-on-surface-variant mt-0.5">30 Oct 2024</span>
+</div>
+</td>
+<td class="py-3 px-3 text-right">
+<button class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-container text-on-surface hover:bg-secondary hover:text-on-secondary font-label-sm text-label-sm transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+<span>WhatsApp</span>
+</button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-3">
+<div class="flex items-center gap-space-sm">
+<img class="w-9 h-9 rounded-full object-cover shadow-sm" data-alt="Portrait of an Arab industrial scaffold safety engineer wearing blue protective helmet and reflective vest against modern infrastructure construction, photorealistic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCn_GQhMhoW6ezt1mTkpxXlPIIiV24MJ0PT_miemcB1Jd9KwMek80r8NfF235MMod54p6lbK7k7XVWiILxFIMoVQwyrbxMAo1WjZV0ABgBRE0pTie7eE510jIRpuEFez-I1Rr-tlvpT6-K9N8F_zC4nidHTAFArZ5oiSvVyAVgRStFDbzQ7Xg78veeJJtEsgr3Ma8ktJ3XRZtGRdPzbUYZScJvmWsByWbDYkn5e-50q"/>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Yousef Mansoor Al-Zahrani</span>
+<span class="font-data-mono text-label-sm text-on-surface-variant">IQAMA 2190334812</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-medium">TÜV Middle East Scafftag Inspector</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">TUV-GCC-0498</span>
+</div>
+</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">location_on</span>
+                    NEOM Sector 4
+                  </span>
+</td>
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-label-sm font-label-sm bg-tertiary-fixed text-on-tertiary-fixed font-semibold w-fit">
+<span class="material-symbols-outlined text-[14px]">warning</span> 9 Days Left
+                    </span>
+<span class="font-data-mono text-label-sm text-on-surface-variant mt-0.5">04 Nov 2024</span>
+</div>
+</td>
+<td class="py-3 px-3 text-right">
+<button class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-container text-on-surface hover:bg-secondary hover:text-on-secondary font-label-sm text-label-sm transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+<span>WhatsApp</span>
+</button>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-3">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-on-primary font-semibold text-label-md">
+                      MA
+                    </div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Mohammad Asif</span>
+<span class="font-data-mono text-label-sm text-on-surface-variant">IQAMA 2501198421</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-medium">Saudi Electricity Co. (SEC) High Voltage</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">SEC-HV-881</span>
+</div>
+</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">location_on</span>
+                    Riyadh Metro Line 3
+                  </span>
+</td>
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-label-sm font-label-sm bg-tertiary-fixed text-on-tertiary-fixed font-semibold w-fit">
+<span class="material-symbols-outlined text-[14px]">warning</span> 12 Days Left
+                    </span>
+<span class="font-data-mono text-label-sm text-on-surface-variant mt-0.5">07 Nov 2024</span>
+</div>
+</td>
+<td class="py-3 px-3 text-right">
+<button class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-container text-on-surface hover:bg-secondary hover:text-on-secondary font-label-sm text-label-sm transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+<span>WhatsApp</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+            Showing 4 high-priority expiring credentials of 18 pending.
+          </span>
+<a class="inline-flex items-center gap-1 font-label-md text-label-md text-secondary hover:underline" href="#">
+<span>View Full Compliance Expiry Roster</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Recent Compliance Activity Audit Stream -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Live Compliance Audit Trail</h2>
+</div>
+<span class="font-data-mono text-label-sm text-on-surface-variant">Immutable HSE Ledger</span>
+</div>
+<div class="space-y-space-md">
+<!-- Timeline Item 1 -->
+<div class="flex items-start gap-space-md">
+<div class="w-8 h-8 rounded-lg bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<div class="flex-1 flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+<div>
+<p class="font-body-md text-body-md text-on-surface">
+<span class="font-semibold text-on-surface">CAT 320D Excavator #EX-402</span> pre-use safety inspection signed &amp; approved by
+                  <span class="font-semibold text-on-surface">Eng. Waleed Al-Shehri</span>.
+                </p>
+<div class="flex items-center gap-2 mt-1">
+<span class="inline-flex px-1.5 py-0.5 rounded text-label-sm font-label-sm bg-secondary-fixed text-on-secondary-fixed font-semibold">Green Tag Issued</span>
+<span class="font-data-mono text-label-sm text-on-surface-variant">Station 4A South Portal</span>
+</div>
+</div>
+<span class="font-data-mono text-label-sm text-on-surface-variant flex-shrink-0">12 mins ago</span>
+</div>
+</div>
+<!-- Timeline Item 2 -->
+<div class="flex items-start gap-space-md">
+<div class="w-8 h-8 rounded-lg bg-primary-fixed text-on-primary-fixed flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">description</span>
+</div>
+<div class="flex-1 flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+<div>
+<p class="font-body-md text-body-md text-on-surface">
+<span class="font-semibold text-on-surface">NEBOSH IGC Certificate</span> submittal validated for
+                  <span class="font-semibold text-on-surface">Zayd Al-Harbi</span> via British Safety Council API check.
+                </p>
+<div class="flex items-center gap-2 mt-1">
+<span class="inline-flex px-1.5 py-0.5 rounded text-label-sm font-label-sm bg-surface-container-high text-on-surface font-semibold">Sub-Contractor: Al-Kifah</span>
+<span class="font-data-mono text-label-sm text-on-surface-variant">Gate Clearance Restored</span>
+</div>
+</div>
+<span class="font-data-mono text-label-sm text-on-surface-variant flex-shrink-0">43 mins ago</span>
+</div>
+</div>
+<!-- Timeline Item 3 -->
+<div class="flex items-start gap-space-md">
+<div class="w-8 h-8 rounded-lg bg-error-container text-on-error-container flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+</div>
+<div class="flex-1 flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+<div>
+<p class="font-body-md text-body-md text-on-surface">
+<span class="font-semibold text-error">Automated Site Gate Interlock:</span> Turnstile 04 revoked access for 3 rigging technicians due to expired credentials.
+                </p>
+<div class="flex items-center gap-2 mt-1">
+<span class="inline-flex px-1.5 py-0.5 rounded text-label-sm font-label-sm bg-error-container text-on-error-container font-semibold">Immediate Incident #SEC-99</span>
+<span class="font-data-mono text-label-sm text-on-surface-variant">Dispatched SMS to Sub-Contractor HSE</span>
+</div>
+</div>
+<span class="font-data-mono text-label-sm text-on-surface-variant flex-shrink-0">06:40 AST</span>
+</div>
+</div>
+<!-- Timeline Item 4 -->
+<div class="flex items-start gap-space-md">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high text-on-surface flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+</div>
+<div class="flex-1 flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+<div>
+<p class="font-body-md text-body-md text-on-surface">
+<span class="font-semibold text-on-surface">Muqeem &amp; Qiwa Gateway Sync</span> completed: 428 corporate employee iqamas refreshed against Ministry database.
+                </p>
+<div class="flex items-center gap-2 mt-1">
+<span class="inline-flex px-1.5 py-0.5 rounded text-label-sm font-label-sm bg-secondary-fixed text-on-secondary-fixed font-semibold">0 Violations</span>
+<span class="font-data-mono text-label-sm text-on-surface-variant">Batch Sync ID: #QW-8812</span>
+</div>
+</div>
+<span class="font-data-mono text-label-sm text-on-surface-variant flex-shrink-0">06:00 AST</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column (4 of 12 columns) -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- GCC Compliance Health Score Widget -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col">
+<div class="flex items-center justify-between mb-space-sm">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Site Compliance Index</h3>
+<span class="px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-secondary-fixed text-on-secondary-fixed font-bold">Grade A</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+          Aramco Project Safety Standards &amp; Saudi Civil Defense 2024 Criteria.
+        </p>
+<!-- Donut Progress Metric (Clean Inline SVG) -->
+<div class="flex items-center justify-center py-space-sm relative">
+<div class="relative w-44 h-44 flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 120 120">
+<circle class="text-surface-container" cx="60" cy="60" fill="transparent" r="50" stroke="currentColor" stroke-width="10"></circle>
+<circle class="text-secondary" cx="60" cy="60" fill="transparent" r="50" stroke="currentColor" stroke-dasharray="314.159" stroke-dashoffset="23.87" stroke-linecap="round" stroke-width="10"></circle>
+</svg>
+<div class="absolute flex flex-col items-center justify-center text-center">
+<span class="font-headline-xl text-headline-xl text-on-surface leading-none font-bold">92.4%</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold mt-1">Audit-Ready</span>
+<span class="font-data-mono text-[11px] text-on-surface-variant">+1.2% this wk</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-sm mt-space-md pt-space-sm">
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Iqama Validity</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">100%</span>
+<span class="font-data-mono text-[11px] text-secondary">Zero Expired</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Equipment Tags</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">89.1%</span>
+<span class="font-data-mono text-[11px] text-on-tertiary-container">1 Bay Flagged</span>
+</div>
+</div>
+</div>
+<!-- Today's Inspection Schedule -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">calendar_today</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Today's Inspections</h3>
+</div>
+<span class="font-label-md text-label-md text-secondary font-semibold cursor-pointer hover:underline">View All</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Item 1: Passed -->
+<div class="p-3 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center flex-shrink-0 text-label-sm font-semibold">
+                08:00
+              </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Mobile Crane Liebherr LTM 1100</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Insp: Saud Al-Ghamdi • Sector 4</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-label-sm font-label-sm bg-secondary-fixed text-on-secondary-fixed font-semibold">
+<span class="material-symbols-outlined text-[13px]">check_circle</span> Passed
+            </span>
+</div>
+<!-- Item 2: Passed -->
+<div class="p-3 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center flex-shrink-0 text-label-sm font-semibold">
+                09:30
+              </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">CAT 320D Excavator #402</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Insp: Waleed Al-Shehri • Trench B</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-label-sm font-label-sm bg-secondary-fixed text-on-secondary-fixed font-semibold">
+<span class="material-symbols-outlined text-[13px]">check_circle</span> Passed
+            </span>
+</div>
+<!-- Item 3: Overdue -->
+<div class="p-3 rounded-lg bg-error-container/40 flex items-center justify-between">
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded bg-error text-on-error flex items-center justify-center flex-shrink-0 text-label-sm font-semibold">
+                10:30
+              </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Scafftag Tower Bay 14-C</span>
+<span class="font-label-sm text-label-sm text-error font-medium">Overdue by 45m • High Risk Bay</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-label-sm font-label-sm bg-error text-on-error font-semibold">
+<span class="material-symbols-outlined text-[13px]">warning</span> Overdue
+            </span>
+</div>
+<!-- Item 4: Pending / In Progress -->
+<div class="p-3 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded bg-surface-container-high text-on-surface flex items-center justify-center flex-shrink-0 text-label-sm font-semibold">
+                11:30
+              </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Emergency Generator SEC-Gen 03</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Insp: Majed Al-Subaie • Substation</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container-high text-on-surface font-medium">
+              Upcoming
+            </span>
+</div>
+<!-- Item 5: Pending -->
+<div class="p-3 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded bg-surface-container-high text-on-surface flex items-center justify-center flex-shrink-0 text-label-sm font-semibold">
+                14:00
+              </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Fall Arrest &amp; Harness Batch #8</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Insp: Khalid Nour • Tool Crib 2</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container-high text-on-surface font-medium">
+              Upcoming
+            </span>
+</div>
+</div>
+</div>
+<!-- Quick Action Launcher Matrix -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-sm">Site Operations Toolkit</h3>
+<div class="grid grid-cols-2 gap-space-sm">
+<a class="p-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex flex-col items-center text-center group" href="#">
+<div class="w-10 h-10 rounded-lg bg-primary text-on-primary flex items-center justify-center mb-2 group-hover:scale-105 transition-transform shadow-sm">
+<span class="material-symbols-outlined text-[20px]">qr_code_scanner</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Gate Pass Scanner</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant mt-0.5">Live turnstile verify</span>
+</a>
+<a class="p-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex flex-col items-center text-center group" href="#">
+<div class="w-10 h-10 rounded-lg bg-secondary text-on-secondary flex items-center justify-center mb-2 group-hover:scale-105 transition-transform shadow-sm">
+<span class="material-symbols-outlined text-[20px]">assignment_turned_in</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">New Scafftag</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant mt-0.5">TÜV / OSHA checklist</span>
+</a>
+<a class="p-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex flex-col items-center text-center group" href="#">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-on-surface flex items-center justify-center mb-2 group-hover:scale-105 transition-transform shadow-sm">
+<span class="material-symbols-outlined text-[20px]">groups</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Subcontractors</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant mt-0.5">14 Active Vendors</span>
+</a>
+<a class="p-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex flex-col items-center text-center group" href="#">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-on-surface flex items-center justify-center mb-2 group-hover:scale-105 transition-transform shadow-sm">
+<span class="material-symbols-outlined text-[20px]">receipt_long</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Aramco Pack</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant mt-0.5">1-Click PDF Bundle</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div></main></div></body></html>
